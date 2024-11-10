@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 681973ce78ebd124bbdbb660ddacc9a3
+guid: 54a9e3ad9ab29e0468d38fa44dd831f5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: anim_0
+      name: move spiter_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 0
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18c5816ee5eaa434e83ae20c7c69c551
-      internalID: -1396587614
+      spriteID: c869cbba17dab3e44beb83d13f9d439c
+      internalID: -1970520086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_1
+      name: move spiter_1
       rect:
         serializedVersion: 2
-        x: 34
+        x: 32
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a7dbf0c12ad8484bb4d49d98727abc9
-      internalID: -509356601
+      spriteID: ad9365a5c87edd64db924000f5db29e4
+      internalID: 1853284512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_2
+      name: move spiter_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26379f1d17da7c54f8fb44c0f15a39f9
-      internalID: -1528944609
+      spriteID: d8b8d3ecc3e410f46b671a4c8729fafa
+      internalID: -615279485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_3
+      name: move spiter_3
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 717d1c20bd3ab75499546920e319cd9f
-      internalID: -1209219157
+      spriteID: aac34d6584f9f7841acfb589dce69e5f
+      internalID: -645073110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_4
+      name: move spiter_4
       rect:
         serializedVersion: 2
-        x: 130
+        x: 128
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a71abed5f60ea8b4baa120b2a88de6ed
-      internalID: -355986720
+      spriteID: fa48f3d0c61fa0d499665fcc5ea75243
+      internalID: 495097847
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_5
+      name: move spiter_5
       rect:
         serializedVersion: 2
-        x: 162
+        x: 160
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c93d8b5225b99409cc8f70448f0606
-      internalID: -1703359706
+      spriteID: d49b0f38225ded7469dea8be3bed9e68
+      internalID: -865117642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: anim_6
+      name: move spiter_6
       rect:
         serializedVersion: 2
-        x: 195
+        x: 192
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,113 +263,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c258e7bde124adb4fbf9e0a731f95b00
-      internalID: 1766164690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anim_7
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 0
-        width: 27
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9195f33a8e211a949984939df16f15cb
-      internalID: 1852178447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anim_8
-      rect:
-        serializedVersion: 2
-        x: 259
-        y: 0
-        width: 27
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f323aa78c33e3214a8d99189f8728ab0
-      internalID: -2041098566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anim_9
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 0
-        width: 27
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8be0fddb32a0b994ab4ffee591175bd5
-      internalID: -1010129960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anim_10
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 0
-        width: 27
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5f16786b065a014797bd4985884a223
-      internalID: -106940625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: anim_11
-      rect:
-        serializedVersion: 2
-        x: 355
-        y: 0
-        width: 27
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfc95209f53f362408ca1c8e77704c09
-      internalID: 1962763260
+      spriteID: ab8f537ad814ab34c8c4a6a8c434f9af
+      internalID: -1358293953
       vertices: []
       indices: 
       edges: []
@@ -385,18 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      anim_0: -1396587614
-      anim_1: -509356601
-      anim_10: -106940625
-      anim_11: 1962763260
-      anim_2: -1528944609
-      anim_3: -1209219157
-      anim_4: -355986720
-      anim_5: -1703359706
-      anim_6: 1766164690
-      anim_7: 1852178447
-      anim_8: -2041098566
-      anim_9: -1010129960
+      move spiter_0: -1970520086
+      move spiter_1: 1853284512
+      move spiter_2: -615279485
+      move spiter_3: -645073110
+      move spiter_4: 495097847
+      move spiter_5: -865117642
+      move spiter_6: -1358293953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

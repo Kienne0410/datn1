@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8bd876ad6b3e134986b9a968ead9a5a
+guid: 8e19009d537a7874fb7d21daa21f97bc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dung im_0
+      name: idle priter_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 0
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a0a4b937b3bed4eaf741b581d08ea1
-      internalID: -1223984580
+      spriteID: 2a33d89a2ba987c4f9b7225ce005e2c7
+      internalID: -1943513723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dung im_1
+      name: idle priter_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 32
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 567cfb0dd7b839b429f6d6cb394e3dd7
-      internalID: -280971211
+      spriteID: 5a7a4478afed4ac42abfd4f64cbb7ef0
+      internalID: 1656140829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dung im_2
+      name: idle priter_2
       rect:
         serializedVersion: 2
-        x: 66
+        x: 64
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a769bc245f018974fbd8fdfb42d21a09
-      internalID: 1358348528
+      spriteID: 815a00129b61ddc41a939addc951ccb8
+      internalID: -478830048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dung im_3
+      name: idle priter_3
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c3fe7c8b31acf84a89c8d254dd7cf59
-      internalID: 750895990
+      spriteID: 5244d05156f4f9d4884aad6ecda6e733
+      internalID: 1007656272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dung im_4
+      name: idle priter_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66adf9d0787d9314990f22bc0aff1a84
-      internalID: 784542140
+      spriteID: eeed3580763a2234aa440a7614be9cd0
+      internalID: -574808470
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dung im_5
+      name: idle priter_5
       rect:
         serializedVersion: 2
-        x: 161
+        x: 160
         y: 0
-        width: 27
-        height: 39
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +242,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50f16ed0cb6b1d441922a949b0e0acc0
-      internalID: 1117637795
+      spriteID: 8caad0bec3684f149aade2c629023f3a
+      internalID: -1818386469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle priter_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792532509209c0b4293c3316467428b8
+      internalID: -121704052
       vertices: []
       indices: 
       edges: []
@@ -259,12 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dung im_0: -1223984580
-      dung im_1: -280971211
-      dung im_2: 1358348528
-      dung im_3: 750895990
-      dung im_4: 784542140
-      dung im_5: 1117637795
+      idle priter_0: -1943513723
+      idle priter_1: 1656140829
+      idle priter_2: -478830048
+      idle priter_3: 1007656272
+      idle priter_4: -574808470
+      idle priter_5: -1818386469
+      idle priter_6: -121704052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
