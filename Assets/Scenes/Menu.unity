@@ -1041,7 +1041,7 @@ GameObject:
   - component: {fileID: 913116846}
   - component: {fileID: 913116845}
   m_Layer: 5
-  m_Name: Dark dim
+  m_Name: Dim filter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
