@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6647589577800768054}
   - component: {fileID: 2144971992691458030}
   - component: {fileID: 8560864760460418849}
-  - component: {fileID: 7835109672186912737}
+  - component: {fileID: 106847684739017365}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -149,7 +149,7 @@ CircleCollider2D:
   m_Offset: {x: -0.045773447, y: 0}
   serializedVersion: 2
   m_Radius: 0.4335326
---- !u!114 &7835109672186912737
+--- !u!114 &106847684739017365
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,10 +158,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7071306947718067290}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a59ea65c77026d247b7226500a896445, type: 3}
+  m_Script: {fileID: 11500000, guid: 58060d650f9e65e4083551f722f89ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 8
-  particleOnHitPrefabVFX: {fileID: 0}
-  isEnemyProjectile: 0
-  projectileRange: 10
+  moveSpeed: 22
+  particleOnHitPrefabVFX: {fileID: 230361140624620985, guid: c7873302991be2c40be2ac8bf8129426, type: 3}
+  rangeAttack: 20
