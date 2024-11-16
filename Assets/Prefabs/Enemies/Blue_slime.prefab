@@ -167,6 +167,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roamChangeDirFloat: 2
+  visionRadius: 0
+  moveSpeed: 2
 --- !u!114 &6576686870449779146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca5f845c7bc9e234c81e0aa7a3f7dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockBackTime: 10
+  knockBackTime: 0
 --- !u!114 &3009798612563817373
 MonoBehaviour:
   m_ObjectHideFlags: 0

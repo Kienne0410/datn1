@@ -116,6 +116,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ActivateSkill"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef7af374-9290-440b-94dd-f35047e16590"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -138,6 +147,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7ebd15e1-325f-47c3-aa05-4a0fe5cf8220"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ActivateSkill"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -203,6 +223,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
         m_Combat_Attack = m_Combat.FindAction("Attack", throwIfNotFound: true);
         m_Combat_Dash = m_Combat.FindAction("Dash", throwIfNotFound: true);
+        m_Combat_ActivateSkill = m_Combat.FindAction("ActivateSkill", throwIfNotFound: true);
         // Inventory
         m_Inventory = asset.FindActionMap("Inventory", throwIfNotFound: true);
         m_Inventory_Keyboard = m_Inventory.FindAction("Keyboard", throwIfNotFound: true);
@@ -315,12 +336,14 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<ICombatActions> m_CombatActionsCallbackInterfaces = new List<ICombatActions>();
     private readonly InputAction m_Combat_Attack;
     private readonly InputAction m_Combat_Dash;
+    private readonly InputAction m_Combat_ActivateSkill;
     public struct CombatActions
     {
         private @PlayerControls m_Wrapper;
         public CombatActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Attack => m_Wrapper.m_Combat_Attack;
         public InputAction @Dash => m_Wrapper.m_Combat_Dash;
+        public InputAction @ActivateSkill => m_Wrapper.m_Combat_ActivateSkill;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -336,6 +359,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
+            @ActivateSkill.started += instance.OnActivateSkill;
+            @ActivateSkill.performed += instance.OnActivateSkill;
+            @ActivateSkill.canceled += instance.OnActivateSkill;
         }
 
         private void UnregisterCallbacks(ICombatActions instance)
@@ -346,6 +372,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
+            @ActivateSkill.started -= instance.OnActivateSkill;
+            @ActivateSkill.performed -= instance.OnActivateSkill;
+            @ActivateSkill.canceled -= instance.OnActivateSkill;
         }
 
         public void RemoveCallbacks(ICombatActions instance)
@@ -417,6 +446,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     {
         void OnAttack(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnActivateSkill(InputAction.CallbackContext context);
     }
     public interface IInventoryActions
     {
