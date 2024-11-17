@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 1483007142685679134}
   - component: {fileID: 5323265419152230744}
   - component: {fileID: 326025323921767248}
+  - component: {fileID: 6544030484153358195}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -254,8 +255,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03, y: -0.02}
-  m_Size: {x: 1.22, y: 2.04}
+  m_Offset: {x: -0.029999971, y: -0.25712633}
+  m_Size: {x: 1.22, y: 1.5657473}
   m_Direction: 0
 --- !u!114 &7818026052474837529
 MonoBehaviour:
@@ -264,7 +265,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133904039114485491}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65299b86b3660b94f86cc21a94b7aa0a, type: 3}
   m_Name: 
@@ -367,6 +368,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: b4ba1cdaff27cd34a911b4b0832cee39, type: 2}
   restoreDefaultMatTime: 0.2
+--- !u!114 &6544030484153358195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133904039114485491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bca69202943d8994f8e767cacdf700d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2454872638513933843
 GameObject:
   m_ObjectHideFlags: 0

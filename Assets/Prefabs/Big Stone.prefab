@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5625058429237979100}
   - component: {fileID: 6197778659057762256}
   m_Layer: 0
-  m_Name: tree (1)
+  m_Name: Big Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6edb8d81f7db2a74ab901f69a1b6ad70, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1139891143, guid: 975ba3b6b9ca9e54a9ab9c0c3079a06c, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: -1879452269, guid: 75a457a7c3e9a5f4c99dbbacf1c4815f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,8 +118,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020137094, y: -0.162755}
-  m_Size: {x: 1.049426, y: 0.9042267}
+  m_Offset: {x: -0.09913155, y: 0.40995687}
+  m_Size: {x: 1.7336757, y: 1.2597059}
   m_Direction: 1
 --- !u!114 &6197778659057762256
 MonoBehaviour:
