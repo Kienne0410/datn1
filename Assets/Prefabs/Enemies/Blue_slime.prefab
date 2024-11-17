@@ -166,8 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b35ec1def26e0f48b35f2817aaa15cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speedRoaming: 2
+  _speedChasing: 4
+  _speedAttacking: 5
   _attackRange: 5
-  _FOVtoChase: 10
+  _fieldOfViewToChase: 30
   _attackCooldown: 2
   _enemyType: {fileID: 5957664940246114937}
   _roamChangeDirFloat: 2

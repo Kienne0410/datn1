@@ -29,7 +29,9 @@ public class EnemyPathfinding : MonoBehaviour
         }
     }
 
-    public void MoveTo(Vector2 targetPosition) {
+    public void MoveTo(Vector2 targetPosition, float speed)
+    {
+        moveSpeed = speed;
         moveDir = targetPosition;
     }
 

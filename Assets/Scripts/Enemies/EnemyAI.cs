@@ -6,10 +6,14 @@ using UnityEngine.Serialization;
 
 public class EnemyAI : MonoBehaviour
 {
-    [FormerlySerializedAs("attackRange")] [Header("Enemy Stats")] [SerializeField]
-    private float _attackRange = 2f;
+    [Header("Enemy Stats")] 
+    [SerializeField]
+    private float _speedRoaming = 2f;
 
-    [SerializeField] private float _FOVtoChase = 10f;
+    [SerializeField] private float _speedChasing = 4f;
+    [SerializeField] private float _speedAttacking = 5f;
+    [SerializeField] private float _attackRange = 2f;
+    [SerializeField] private float _fieldOfViewToChase = 10f;
     [SerializeField] private float _attackCooldown = 2f;
     [SerializeField] private MonoBehaviour _enemyType;
     [SerializeField] private float _roamChangeDirFloat = 2f;
@@ -46,7 +50,7 @@ public class EnemyAI : MonoBehaviour
         {
             case State.Roaming:
                 Roaming();
-                if (_distanceToPlayer <= _FOVtoChase)
+                if (_distanceToPlayer <= _fieldOfViewToChase)
                 {
                     _currentState = State.Chase;
                     _animator.SetTrigger("Chase");
@@ -60,7 +64,7 @@ public class EnemyAI : MonoBehaviour
                     _currentState = State.Attack;
                     _animator.SetTrigger("Attack");
                 }
-                else if (_distanceToPlayer > _FOVtoChase)
+                else if (_distanceToPlayer > _fieldOfViewToChase)
                 {
                     _currentState = State.Roaming;
                     _animator.SetTrigger("Roaming");
@@ -82,7 +86,7 @@ public class EnemyAI : MonoBehaviour
     private void Roaming() {
         timeRoaming += Time.deltaTime;
 
-        _enemyPathfinding.MoveTo(roamPosition);
+        _enemyPathfinding.MoveTo(roamPosition, _speedRoaming);
 
         if (timeRoaming > _roamChangeDirFloat) {
             roamPosition = GetRoamingPosition();
@@ -92,7 +96,7 @@ public class EnemyAI : MonoBehaviour
     private void ChasePlayer()
     {
         Vector2 direction = (_playerTransform.position - transform.position).normalized;
-        _enemyPathfinding.MoveTo(direction);
+        _enemyPathfinding.MoveTo(direction, _speedChasing);
     }
     private void AttackPlayer() {
 
@@ -104,7 +108,7 @@ public class EnemyAI : MonoBehaviour
             if (_stopMovingWhileAttacking) {
                 _enemyPathfinding.StopMoving();
             } else {
-                _enemyPathfinding.MoveTo(roamPosition);
+                _enemyPathfinding.MoveTo(roamPosition, _speedAttacking);
             }
 
             StartCoroutine(AttackCooldownRoutine());
