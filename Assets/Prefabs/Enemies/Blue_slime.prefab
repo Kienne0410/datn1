@@ -124,9 +124,9 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.17788506, y: 0.22212338}
-  m_Size: {x: 0.8905158, y: 0.8905158}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0.36}
+  m_Size: {x: 1.61, y: 0.98}
+  m_Direction: 1
 --- !u!50 &7264651736345234324
 Rigidbody2D:
   serializedVersion: 4
@@ -166,9 +166,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b35ec1def26e0f48b35f2817aaa15cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roamChangeDirFloat: 2
-  visionRadius: 0
-  moveSpeed: 2
+  _attackRange: 5
+  _FOVtoChase: 10
+  _attackCooldown: 2
+  _enemyType: {fileID: 5957664940246114937}
+  _roamChangeDirFloat: 2
+  _stopMovingWhileAttacking: 0
+  _animator: {fileID: 5239077600753392251}
+  _enemyPathfinding: {fileID: 6576686870449779146}
 --- !u!114 &6576686870449779146
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -167,11 +167,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b35ec1def26e0f48b35f2817aaa15cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roamChangeDirFloat: 2
-  attackRange: 5
-  enemyType: {fileID: 7788178689764948568}
-  attackCooldown: 2
-  stopMovingWhileAttacking: 0
+  _attackRange: 5
+  _FOVtoChase: 10
+  _attackCooldown: 2
+  _enemyType: {fileID: 0}
+  _roamChangeDirFloat: 2
+  _stopMovingWhileAttacking: 0
+  _animator: {fileID: 5645916282995032810}
+  _enemyPathfinding: {fileID: 2968106965064663994}
 --- !u!114 &2968106965064663994
 MonoBehaviour:
   m_ObjectHideFlags: 0

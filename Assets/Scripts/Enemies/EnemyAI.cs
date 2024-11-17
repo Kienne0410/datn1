@@ -1,84 +1,110 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.DualShock;
+using UnityEngine.Serialization;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private float roamChangeDirFloat = 2f;
-    [SerializeField] private float attackRange = 5f;
-    [SerializeField] private MonoBehaviour enemyType;
-    [SerializeField] private float attackCooldown = 2f;
-    [SerializeField] private bool stopMovingWhileAttacking = false;
+    [FormerlySerializedAs("attackRange")] [Header("Enemy Stats")] [SerializeField]
+    private float _attackRange = 2f;
+
+    [SerializeField] private float _FOVtoChase = 10f;
+    [SerializeField] private float _attackCooldown = 2f;
+    [SerializeField] private MonoBehaviour _enemyType;
+    [SerializeField] private float _roamChangeDirFloat = 2f;
+    [SerializeField] private bool _stopMovingWhileAttacking = false;
+    private State _currentState = State.Roaming;
+    [Header("Other")] [SerializeField] Animator _animator;
+    private Transform _playerTransform;
+    [SerializeField] private EnemyPathfinding _enemyPathfinding;
+    
 
     private bool canAttack = true;
 
     private enum State {
-        Roaming, 
-        Attacking
+        Roaming,
+        Chase,
+        Attack
     }
 
     private Vector2 roamPosition;
     private float timeRoaming = 0f;
 
-    private State state;
-    private EnemyPathfinding enemyPathfinding;
-
     private void Awake() {
-        enemyPathfinding = GetComponent<EnemyPathfinding>();
-        state = State.Roaming;
+        _playerTransform = PlayerController.Instance.transform;
     }
 
     private void Start() {
         roamPosition = GetRoamingPosition();
     }
 
-    private void Update() {
-        MovementStateControl();
-    }
-
-    private void MovementStateControl() {
-        switch (state)
+    private void Update() 
+    {
+        float _distanceToPlayer = Vector2.Distance(transform.position, PlayerController.Instance.transform.position);
+        switch (_currentState)
         {
-            default:
             case State.Roaming:
                 Roaming();
-            break;
+                if (_distanceToPlayer <= _FOVtoChase)
+                {
+                    _currentState = State.Chase;
+                    _animator.SetTrigger("Chase");
+                }
 
-            case State.Attacking:
-                Attacking();
-            break;
+                break;
+            case State.Chase:
+                ChasePlayer();
+                if (_distanceToPlayer <= _attackRange)
+                {
+                    _currentState = State.Attack;
+                    _animator.SetTrigger("Attack");
+                }
+                else if (_distanceToPlayer > _FOVtoChase)
+                {
+                    _currentState = State.Roaming;
+                    _animator.SetTrigger("Roaming");
+                }
+
+                break;
+            case State.Attack:
+                //AttackPlayer();
+                if (_distanceToPlayer > _attackRange)
+                {
+                    _currentState = State.Chase;
+                    _animator.SetTrigger("Chase");
+                }
+                break;
         }
+        
     }
 
     private void Roaming() {
         timeRoaming += Time.deltaTime;
 
-        enemyPathfinding.MoveTo(roamPosition);
+        _enemyPathfinding.MoveTo(roamPosition);
 
-        if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) < attackRange) {
-            state = State.Attacking;
-        }
-
-        if (timeRoaming > roamChangeDirFloat) {
+        if (timeRoaming > _roamChangeDirFloat) {
             roamPosition = GetRoamingPosition();
         }
     }
 
-    private void Attacking() {
-        if (Vector2.Distance(transform.position, PlayerController.Instance.transform.position) > attackRange)
-        {
-            state = State.Roaming;
-        }
+    private void ChasePlayer()
+    {
+        Vector2 direction = (_playerTransform.position - transform.position).normalized;
+        _enemyPathfinding.MoveTo(direction);
+    }
+    private void AttackPlayer() {
 
-        if (attackRange != 0 && canAttack) {
+        if (_attackRange != 0 && canAttack) {
 
             canAttack = false;
-            (enemyType as IEnemy).Attack();
+            (_enemyType as IEnemy).Attack();
 
-            if (stopMovingWhileAttacking) {
-                enemyPathfinding.StopMoving();
+            if (_stopMovingWhileAttacking) {
+                _enemyPathfinding.StopMoving();
             } else {
-                enemyPathfinding.MoveTo(roamPosition);
+                _enemyPathfinding.MoveTo(roamPosition);
             }
 
             StartCoroutine(AttackCooldownRoutine());
@@ -86,7 +112,7 @@ public class EnemyAI : MonoBehaviour
     }
 
     private IEnumerator AttackCooldownRoutine() {
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(_attackCooldown);
         canAttack = true;
     }
 

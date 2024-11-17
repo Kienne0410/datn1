@@ -12,7 +12,7 @@ public class EnemyPathfinding : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private void Awake() {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();    
         knockback = GetComponent<Knockback>();
         rb = GetComponent<Rigidbody2D>();
     }
