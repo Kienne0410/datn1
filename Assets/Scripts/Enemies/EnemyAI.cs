@@ -45,7 +45,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update() 
     {
-        float _distanceToPlayer = Vector2.Distance(transform.position, PlayerController.Instance.transform.position);
+        float _distanceToPlayer = Vector2.Distance(transform.position, _playerTransform.position);
         switch (_currentState)
         {
             case State.Roaming:
