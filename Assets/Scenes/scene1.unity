@@ -71180,7 +71180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2282198603241793738, guid: 9f091868ba962de4ca7b0f9307704143, type: 3}
-  spawnRate: 3
+  spawnRate: 0.5
   spawnRadius: 2
 --- !u!1001 &551497237
 PrefabInstance:
