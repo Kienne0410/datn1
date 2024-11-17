@@ -194,7 +194,7 @@ TextureImporter:
         width: 29
         height: 383
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,6 +202,27 @@ TextureImporter:
       bones: []
       spriteID: c6b76c05589db41488d9c6d30e255676
       internalID: 1023100585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attlat panel 2_4
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 997
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 38, y: 38, z: 38, w: 38}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0121f81e4056f4fa1a2819c941a065
+      internalID: -937667379
       vertices: []
       indices: 
       edges: []
@@ -221,6 +242,7 @@ TextureImporter:
       Attlat panel 2_1: -60383039
       Attlat panel 2_2: 1021533375
       Attlat panel 2_3: 1023100585
+      Attlat panel 2_4: -937667379
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
