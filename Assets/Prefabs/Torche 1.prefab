@@ -25,13 +25,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3057436843273073839}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.9999999, w: -0.00055114535}
+  m_LocalPosition: {x: 0.02, y: 0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8542567086955127775}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.063}
 --- !u!114 &7558717469309856258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,11 +48,11 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.713
-  m_Color: {r: 0.4292453, g: 0.882712, b: 1, a: 1}
-  m_Intensity: 4.37
+  m_Color: {r: 0.98608184, g: 0.5896226, b: 1, a: 1}
+  m_Intensity: 3.73
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000df726c7f51b242df0746c067
+  m_ApplyToSortingLayers: 00000000df726c7f0746c06751b242df2b95ac67
   m_LightCookieSprite: {fileID: -1630962296, guid: cbf60c9b73020cb45951f60ea6f02b45, type: 3}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -68,10 +68,10 @@ MonoBehaviour:
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
-  m_PointLightInnerAngle: 88.19
-  m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 1.87
-  m_PointLightOuterRadius: 11.19
+  m_PointLightInnerAngle: 0
+  m_PointLightOuterAngle: 332.58655
+  m_PointLightInnerRadius: 2.85
+  m_PointLightOuterRadius: 5.07
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -135,7 +135,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1f0f98aa818421b46b413fe44ccf48f8, type: 2}
+  - {fileID: 2100000, guid: c0ac5ac1a1690264fb44fe03a3d448ac, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -156,7 +156,7 @@ SpriteRenderer:
   m_SortingLayerID: 2137813727
   m_SortingLayer: 1
   m_SortingOrder: 5
-  m_Sprite: {fileID: 689078402, guid: 75a457a7c3e9a5f4c99dbbacf1c4815f, type: 3}
+  m_Sprite: {fileID: 498501927, guid: 75a457a7c3e9a5f4c99dbbacf1c4815f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -198,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8542567086955127775}
   m_Layer: 0
-  m_Name: Torche
+  m_Name: Torche 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

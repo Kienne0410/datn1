@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5058309422294743511}
   - component: {fileID: 656262469819129886}
   - component: {fileID: 1391858397656641898}
+  - component: {fileID: 1016435004437063189}
   m_Layer: 0
   m_Name: Big Stone_3
   m_TagString: Untagged
@@ -131,5 +132,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e857b0b5d3ce041b1cafdf73496fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1016435004437063189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8304269867452735511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65299b86b3660b94f86cc21a94b7aa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
