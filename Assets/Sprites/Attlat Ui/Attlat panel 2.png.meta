@@ -227,6 +227,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Attlat panel 2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 778
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2df6b9ae4af05845b53d67d0868f37b
+      internalID: -692615274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -243,6 +264,7 @@ TextureImporter:
       Attlat panel 2_2: 1021533375
       Attlat panel 2_3: 1023100585
       Attlat panel 2_4: -937667379
+      Attlat panel 2_5: -692615274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
