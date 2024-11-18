@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4159223228431113734}
   - component: {fileID: 6540354172733690725}
   - component: {fileID: 1746875493227290502}
+  - component: {fileID: 796283810351475183}
   m_Layer: 0
   m_Name: Bow
   m_TagString: Untagged
@@ -139,6 +140,18 @@ MonoBehaviour:
   weaponInfo: {fileID: 0}
   arrowPrefab: {fileID: 3987391309064833049}
   arrowSpawnPoint: {fileID: 0}
+--- !u!114 &796283810351475183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987391309064833049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65299b86b3660b94f86cc21a94b7aa0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4829184815115038606
 GameObject:
   m_ObjectHideFlags: 0
