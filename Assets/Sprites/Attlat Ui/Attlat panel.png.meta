@@ -509,7 +509,7 @@ TextureImporter:
         width: 129
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -517,6 +517,48 @@ TextureImporter:
       bones: []
       spriteID: 8a591f2776a1d6f498593e3c116994ab
       internalID: -726567117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attlat panel_19
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 584
+        width: 159
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7415a7afebdd64980a8b258e6c792c
+      internalID: -652861011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attlat panel_20
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 617
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b1b7c95e9cd67448b941fd139ae385
+      internalID: 578139398
       vertices: []
       indices: 
       edges: []
@@ -543,7 +585,9 @@ TextureImporter:
       Attlat panel_16: 577341038
       Attlat panel_17: -86841524
       Attlat panel_18: -726567117
+      Attlat panel_19: -652861011
       Attlat panel_2: -737745968
+      Attlat panel_20: 578139398
       Attlat panel_3: -1950506226
       Attlat panel_4: -1743002555
       Attlat panel_5: -1957432198
