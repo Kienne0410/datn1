@@ -34,12 +34,10 @@ public class EnemyAI : MonoBehaviour
 
     private Vector2 roamPosition;
     private float timeRoaming = 0f;
-
-    private void Awake() {
-        _playerTransform = PlayerController.Instance.transform;
-    }
+    
 
     private void Start() {
+        _playerTransform = PlayerController.Instance.transform;
         roamPosition = GetRoamingPosition();
     }
 
