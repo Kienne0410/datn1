@@ -116,7 +116,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private IEnumerator AttackCooldownRoutine() {
+    protected IEnumerator AttackCooldownRoutine() {
         yield return new WaitForSeconds(_attackCooldown);
         canAttack = true;
     }
