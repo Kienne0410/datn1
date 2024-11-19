@@ -124760,7 +124760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1323930135
 RectTransform:
   m_ObjectHideFlags: 0
@@ -127441,6 +127441,10 @@ PrefabInstance:
       value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 5745302992334545565, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: warningSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ccf042be94fe62c468f18d67280ab0e6, type: 3}
+    - target: {fileID: 5745302992334545565, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: warningPrefab
       value: 
       objectReference: {fileID: 6641559676651111680, guid: 534d1e2c139ab8744a95d0047d7941af, type: 3}
@@ -127448,6 +127452,10 @@ PrefabInstance:
       propertyPath: explosionCount
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 5745302992334545565, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: explosionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: ccf042be94fe62c468f18d67280ab0e6, type: 3}
     - target: {fileID: 5745302992334545565, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: cooldownOverlay
       value: 
