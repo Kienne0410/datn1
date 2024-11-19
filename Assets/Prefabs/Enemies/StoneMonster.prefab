@@ -167,10 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b35ec1def26e0f48b35f2817aaa15cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _speedRoaming: 2
+  _speedChasing: 4
+  _speedAttacking: 5
   _attackRange: 5
-  _FOVtoChase: 10
+  _fieldOfViewToChase: 10
   _attackCooldown: 2
-  _enemyType: {fileID: 0}
+  _enemyType: {fileID: 7788178689764948568}
   _roamChangeDirFloat: 2
   _stopMovingWhileAttacking: 0
   _animator: {fileID: 5645916282995032810}
@@ -221,7 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d7d13dad1693d44f98a679ced932bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 100
   deathVFXPrefab: {fileID: 3223114527068803964, guid: 19c2c7c78a77cc44b802653f606bfcd0, type: 3}
   knockBackThrust: 15
 --- !u!114 &6213970138054387925
