@@ -12,21 +12,21 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] private float _speedChasing = 4f;
     [SerializeField] private float _speedAttacking = 5f;
-    [SerializeField] private float _attackRange = 2f;
-    [SerializeField] private float _fieldOfViewToChase = 10f;
+    [SerializeField] protected float _attackRange = 2f;
+    [SerializeField] protected float _fieldOfViewToChase = 10f;
     [SerializeField] private float _attackCooldown = 2f;
-    [SerializeField] private MonoBehaviour _enemyType;
+    [SerializeField] protected MonoBehaviour _enemyType;
     [SerializeField] private float _roamChangeDirFloat = 2f;
     [SerializeField] private bool _stopMovingWhileAttacking = false;
-    private State _currentState = State.Roaming;
-    [Header("Other")] [SerializeField] Animator _animator;
-    private Transform _playerTransform;
-    [SerializeField] private EnemyPathfinding _enemyPathfinding;
-    
+    protected State _currentState = State.Roaming;
+    [Header("Other")] [SerializeField] protected Animator _animator;
+    protected Transform _playerTransform;
+    [SerializeField] protected EnemyPathfinding _enemyPathfinding;
 
-    private bool canAttack = true;
 
-    private enum State {
+    protected bool canAttack = true;
+
+    protected enum State {
         Roaming,
         Chase,
         Attack
@@ -83,7 +83,7 @@ public class EnemyAI : MonoBehaviour
         
     }
 
-    private void Roaming() {
+    protected void Roaming() {
         timeRoaming += Time.deltaTime;
 
         _enemyPathfinding.MoveTo(roamPosition, _speedRoaming);
@@ -93,12 +93,13 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void ChasePlayer()
+    protected void ChasePlayer()
     {
         Vector2 direction = (_playerTransform.position - transform.position).normalized;
         _enemyPathfinding.MoveTo(direction, _speedChasing);
     }
-    private void AttackPlayer() {
+
+    protected virtual void AttackPlayer() {
 
         if (_attackRange != 0 && canAttack) {
 
