@@ -78,7 +78,6 @@ GameObject:
   - component: {fileID: 1483007142685679134}
   - component: {fileID: 5323265419152230744}
   - component: {fileID: 326025323921767248}
-  - component: {fileID: 6544030484153358195}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -255,8 +254,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.029999971, y: -0.25712633}
-  m_Size: {x: 1.22, y: 1.5657473}
+  m_Offset: {x: 0.009886384, y: -0.3989209}
+  m_Size: {x: 1.1402273, y: 1.2821581}
   m_Direction: 0
 --- !u!114 &7818026052474837529
 MonoBehaviour:
@@ -265,7 +264,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133904039114485491}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65299b86b3660b94f86cc21a94b7aa0a, type: 3}
   m_Name: 
@@ -313,19 +312,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 2935901210332730680, guid: e55b8df0ab1dad149b17e407b48a9531, type: 3}
-  warningPrefab: {fileID: 244714783432856502, guid: 8e1a537d626edef42bfe7894f4196857, type: 3}
-  radius: 5.96
-  explosionCount: 30
+  warningPrefab: {fileID: 6641559676651111680, guid: 534d1e2c139ab8744a95d0047d7941af, type: 3}
+  radius: 7
+  explosionCount: 20
   delayBetweenExplosions: 0.02
-  warningTime: 1
+  warningTime: 1.3
   damage: 10
   cooldownTime: 3
   explosionSizeRange: {x: 0.7, y: 1.7}
   cooldownOverlay: {fileID: 0}
   skillButton: {fileID: 0}
   explosionSkillSound: {fileID: 8300000, guid: c950b9bad82eead48bf77ebb6e5ac592, type: 3}
-  warningSound: {fileID: 0}
-  explosionSound: {fileID: 0}
+  warningSound: {fileID: 8300000, guid: ccf042be94fe62c468f18d67280ab0e6, type: 3}
+  explosionSound: {fileID: 8300000, guid: ccf042be94fe62c468f18d67280ab0e6, type: 3}
 --- !u!114 &1483007142685679134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,18 +367,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: b4ba1cdaff27cd34a911b4b0832cee39, type: 2}
   restoreDefaultMatTime: 0.2
---- !u!114 &6544030484153358195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133904039114485491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bca69202943d8994f8e767cacdf700d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2454872638513933843
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,11 +497,11 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.23377603, g: 0.21436095, b: 0.6075471, a: 1}
+  m_Color: {r: 0.5773585, g: 0.5773585, b: 0.5773585, a: 1}
   m_Intensity: 1.37
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 2b95ac670000000051b242df
+  m_ApplyToSortingLayers: 2b95ac6751b242df00000000
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -666,7 +653,7 @@ Transform:
   m_GameObject: {fileID: 5057507877113370150}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.09, y: 0.58, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -685,11 +672,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_LightType: 3
+  m_LightType: 4
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.678
-  m_Color: {r: 0.41320753, g: 1, b: 0.9808787, a: 1}
-  m_Intensity: 0.97
+  m_FalloffIntensity: 1
+  m_Color: {r: 0.69803923, g: 0.8663066, b: 1, a: 1}
+  m_Intensity: 1.54
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: df726c7f
@@ -710,8 +697,8 @@ MonoBehaviour:
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
-  m_PointLightInnerRadius: 0.67
-  m_PointLightOuterRadius: 1.57
+  m_PointLightInnerRadius: 1.83
+  m_PointLightOuterRadius: 2.05
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
