@@ -126833,6 +126833,7 @@ GameObject:
   - component: {fileID: 2133401182}
   - component: {fileID: 2133401181}
   - component: {fileID: 2133401180}
+  - component: {fileID: 2133401185}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -126945,6 +126946,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2133401185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133401179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d3df802467c6243b1688b2bea2a98e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthBarSlider: {fileID: 1586973272}
+  _healthBarText: {fileID: 989222783}
 --- !u!1001 &2146019440
 PrefabInstance:
   m_ObjectHideFlags: 0

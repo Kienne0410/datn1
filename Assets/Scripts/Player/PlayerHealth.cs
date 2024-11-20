@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -20,6 +21,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start() {
         currentHealth = maxHealth;
+        HealthBar.Instance.SetHeathBarText($"{currentHealth}/{maxHealth}");
+        HealthBar.Instance.SetSliderHealthBarValue(1);
+        
     }
 
     private void OnCollisionStay2D(Collision2D other) {
@@ -31,12 +35,19 @@ public class PlayerHealth : MonoBehaviour
     }
 
     public void TakeDamage(int damageAmount, Transform hitTransform) {
+        
         if (!canTakeDamage) { return; }
-
         knockback.GetKnockedBack(hitTransform, knockBackThrustAmount);
         StartCoroutine(flash.FlashRoutine());
         canTakeDamage = false;
         currentHealth -= damageAmount;
+        HealthBar.Instance.SetHeathBarText($"{currentHealth}/{maxHealth}");
+        float ratio = (float) currentHealth / maxHealth;
+        HealthBar.Instance.SetSliderHealthBarValue(ratio);
+        if (currentHealth <= 0)
+        {
+            PlayerController.Instance.gameObject.SetActive(false);
+        }
         StartCoroutine(DamageRecoveryRoutine());
     }
 
