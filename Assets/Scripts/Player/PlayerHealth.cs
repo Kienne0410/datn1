@@ -46,9 +46,18 @@ public class PlayerHealth : MonoBehaviour
         HealthBar.Instance.SetSliderHealthBarValue(ratio);
         if (currentHealth <= 0)
         {
-            PlayerController.Instance.gameObject.SetActive(false);
+            StartCoroutine(EndGame());
+            return;
         }
         StartCoroutine(DamageRecoveryRoutine());
+    }
+
+    private IEnumerator EndGame()
+    {
+        PlayerController.Instance.PlayerDie();
+        yield return new WaitForSeconds(PlayerController.Instance.GetTimeOfDieAnim());
+        PlayerController.Instance.gameObject.SetActive(false);
+        print("Game Over");
     }
 
     private IEnumerator DamageRecoveryRoutine() {

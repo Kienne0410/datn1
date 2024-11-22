@@ -11,7 +11,7 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
     [SerializeField] private Transform weaponCollider;
-
+    
     private PlayerControls playerControls;
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -39,6 +39,21 @@ public class PlayerController : Singleton<PlayerController>
         startingMoveSpeed = moveSpeed;
     }
 
+    public float GetTimeOfDieAnim()
+    {
+        AnimationClip die = GetAnimationClip(myAnimator, "die");
+        return die.length;
+    }
+    private AnimationClip GetAnimationClip(Animator animator, string clipName)
+    {
+        // Tìm animation clip theo tên
+        foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
+        {
+            if (clip.name == clipName)
+                return clip;
+        }
+        return null;
+    }
     private void OnEnable() {
         playerControls.Enable();
     }
@@ -63,6 +78,10 @@ public class PlayerController : Singleton<PlayerController>
         myAnimator.SetFloat("moveY", movement.y);
     }
 
+    public void PlayerDie()
+    {
+        myAnimator.SetTrigger("die");
+    }
     private void Move() {
         if (knockback.GettingKnockedBack) { return; }
 
