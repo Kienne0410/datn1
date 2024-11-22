@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
-
+    [SerializeField] private GameObject _endGame;
     private int currentHealth;
     private bool canTakeDamage = true;
     private Knockback knockback;
@@ -17,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
     private void Awake() {
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
+        _endGame.SetActive(false);
     }
 
     private void Start() {
@@ -56,8 +57,9 @@ public class PlayerHealth : MonoBehaviour
     {
         PlayerController.Instance.PlayerDie();
         yield return new WaitForSeconds(PlayerController.Instance.GetTimeOfDieAnim());
+        yield return new WaitForSeconds(0.5f);
+        _endGame.SetActive(true);
         PlayerController.Instance.gameObject.SetActive(false);
-        print("Game Over");
     }
 
     private IEnumerator DamageRecoveryRoutine() {
