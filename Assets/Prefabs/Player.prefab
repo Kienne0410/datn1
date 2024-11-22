@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141849025204e424991cb197941369df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 10
   knockBackThrustAmount: 10
   damageRecoveryTime: 1
 --- !u!114 &326025323921767248
@@ -497,7 +497,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.5773585, g: 0.5773585, b: 0.5773585, a: 1}
+  m_Color: {r: 0.28288534, g: 0.31690103, b: 0.3679245, a: 1}
   m_Intensity: 1.37
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
