@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3339092697656920077}
   - component: {fileID: 4159223228431113734}
   - component: {fileID: 6540354172733690725}
-  - component: {fileID: 1746875493227290502}
   - component: {fileID: 796283810351475183}
   m_Layer: 0
   m_Name: Bow
@@ -125,21 +124,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1746875493227290502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3987391309064833049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 419c0f579672f4644abe137566389f27, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponInfo: {fileID: 0}
-  arrowPrefab: {fileID: 3987391309064833049}
-  arrowSpawnPoint: {fileID: 0}
 --- !u!114 &796283810351475183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,7 +161,7 @@ Transform:
   m_GameObject: {fileID: 4829184815115038606}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.405, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
