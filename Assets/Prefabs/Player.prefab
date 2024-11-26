@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 1483007142685679134}
   - component: {fileID: 5323265419152230744}
   - component: {fileID: 326025323921767248}
+  - component: {fileID: 5283959581300895502}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -326,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141849025204e424991cb197941369df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 10
   knockBackThrustAmount: 10
   damageRecoveryTime: 1
   _endGame: {fileID: 0}
@@ -344,6 +345,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   whiteFlashMat: {fileID: 2100000, guid: b4ba1cdaff27cd34a911b4b0832cee39, type: 2}
   restoreDefaultMatTime: 0.2
+--- !u!114 &5283959581300895502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133904039114485491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6a6ed786ad20f4fb3fa983c92760a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTab: {fileID: 0}
 --- !u!1 &2454872638513933843
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,7 +785,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1714602607, guid: ab942fbe23eb10c45864a1406c3430c4, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.37046102, g: 0.40234944, b: 0.4245283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

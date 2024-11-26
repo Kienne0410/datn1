@@ -5,7 +5,10 @@ using UnityEngine;
 public class MouseFollow : MonoBehaviour
 {
     private void Update() {
-        FaceMouse();
+        if (Time.timeScale > 0)
+        {
+            FaceMouse();
+        }
     }
 
     private void FaceMouse() {

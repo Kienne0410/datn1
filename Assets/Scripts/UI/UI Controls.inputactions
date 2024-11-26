@@ -1,0 +1,34 @@
+{
+    "name": "UI Controls",
+    "maps": [
+        {
+            "name": "UI",
+            "id": "41084922-a947-432d-87ec-6c564e15dab2",
+            "actions": [
+                {
+                    "name": "OnTab",
+                    "type": "Button",
+                    "id": "5806292a-2a73-49d6-95e7-995497789de8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c34bb948-a856-4001-b11a-7eceff2170f9",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnTab",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
