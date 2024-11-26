@@ -21,6 +21,10 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     {
         playerControls.Enable();
     }
+    private void OnDisable()
+    {
+        playerControls.Disable();
+    }
 
     private void Start()
     {

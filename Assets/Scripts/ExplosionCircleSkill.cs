@@ -1,6 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.InputSystem;
+using Random = UnityEngine.Random;
 
 public class ExplosionSkill : MonoBehaviour
 {
@@ -24,9 +27,26 @@ public class ExplosionSkill : MonoBehaviour
     private bool isSkillActive = false;
     private bool isCooldown = false; // Trạng thái hồi chiêu
     private float currentCooldownTime = 0f; // Thời gian còn lại của hồi chiêu
+    private PlayerControls _playerControls;
 
+    private void Awake()
+    {
+        _playerControls = new PlayerControls();
+    }
+
+    private void OnEnable()
+    {
+        _playerControls.Enable();
+    }
+
+    private void OnDisable()
+    {
+        _playerControls.Disable();
+    }
+    
     private void Start()
     {
+        _playerControls.Combat.ActivateSkill.performed += _ => OnActivateSkill();
         // Lấy AudioSource từ đối tượng
         audioSource = GetComponent<AudioSource>();
 
