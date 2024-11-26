@@ -81,7 +81,7 @@
                     "name": "Attack",
                     "type": "Button",
                     "id": "67f49bae-a77e-4aac-a384-e44f20a034ce",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -99,7 +99,7 @@
                     "name": "ActivateSkill",
                     "type": "Button",
                     "id": "ef7af374-9290-440b-94dd-f35047e16590",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
