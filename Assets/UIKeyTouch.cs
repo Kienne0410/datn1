@@ -26,11 +26,13 @@ public class UIKeyTouch : MonoBehaviour
     void Start()
 
     {
-        _uiControls.UI.OnTab.performed += _ =>
-        {
-            PauseGame(!OnTab.activeSelf);
-            OnTab.SetActive(!OnTab.activeSelf);
-        };
+        _uiControls.UI.OnTab.performed += _ => DisplayOnTab();
+    }
+
+    public void DisplayOnTab()
+    {
+        PauseGame(!OnTab.activeSelf);
+        OnTab.SetActive(!OnTab.activeSelf);
     }
 
     private void PauseGame(bool pause)
