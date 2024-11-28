@@ -63,6 +63,8 @@ AnimationClip:
     flags: 2
   - serializedVersion: 2
     curve:
+    - time: 0.15
+      value: {fileID: 0}
     - time: 0.18333334
       value: {fileID: -5184236281921615200, guid: 4ca6b5bac7e1ea646b35119c252825e0, type: 3}
     - time: 0.21666667
@@ -126,6 +128,7 @@ AnimationClip:
     - {fileID: -6178295162061579417, guid: 260833f5c236a4e46b3e284f77d7536a, type: 3}
     - {fileID: -6364203844572309997, guid: 260833f5c236a4e46b3e284f77d7536a, type: 3}
     - {fileID: -6364203844572309997, guid: 260833f5c236a4e46b3e284f77d7536a, type: 3}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: -5184236281921615200, guid: 4ca6b5bac7e1ea646b35119c252825e0, type: 3}
