@@ -9,8 +9,9 @@ public class Parallax : MonoBehaviour
     private Camera cam;
     private Vector2 startPos;
     private Vector2 travel => (Vector2)cam.transform.position - startPos;
-
+    private float origin;
     private void Awake() {
+        origin = transform.position.x;
         cam = Camera.main;
     }
 
@@ -19,6 +20,8 @@ public class Parallax : MonoBehaviour
     }
 
     private void FixedUpdate() {
+    
         transform.position = startPos + travel * parallaxOffset;
+        transform.position = new Vector2(origin,transform.position.y);
     }
 }
