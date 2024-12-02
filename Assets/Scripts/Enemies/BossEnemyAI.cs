@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossEnemyAI : EnemyAI
 {
-    protected virtual void Update() 
+    protected override void Update() 
     {
         float _distanceToPlayer = Vector2.Distance(transform.position, _playerTransform.position);
         switch (_currentState)

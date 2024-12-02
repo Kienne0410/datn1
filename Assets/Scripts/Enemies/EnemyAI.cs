@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour
         roamPosition = GetRoamingPosition();
     }
 
-    private void Update() 
+    protected virtual void Update() 
     {
         float _distanceToPlayer = Vector2.Distance(transform.position, _playerTransform.position);
         switch (_currentState)
