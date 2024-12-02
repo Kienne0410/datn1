@@ -1,0 +1,716 @@
+fileFormatVersion: 2
+guid: 68d478f6ce3261a4799a77f84991f555
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2048503917264209691
+    second: 276_0
+  - first:
+      213: 7319859146419332617
+    second: 276_1
+  - first:
+      213: -3590515788962162521
+    second: 276_2
+  - first:
+      213: -5605549169405490956
+    second: 276_3
+  - first:
+      213: -8914272342201151898
+    second: 276_4
+  - first:
+      213: -6345586704311317488
+    second: 276_5
+  - first:
+      213: -8941222064379046386
+    second: 276_6
+  - first:
+      213: 2731937767780357529
+    second: 276_7
+  - first:
+      213: -6886298199865954780
+    second: 276_8
+  - first:
+      213: -4535876378128841987
+    second: 276_9
+  - first:
+      213: 8477834091460885021
+    second: 276_10
+  - first:
+      213: -1244232768556539332
+    second: 276_11
+  - first:
+      213: -8581590990772640732
+    second: 276_12
+  - first:
+      213: 2646123940021417441
+    second: 276_13
+  - first:
+      213: 8190779409691181925
+    second: 276_14
+  - first:
+      213: 5668867715446653430
+    second: 276_15
+  - first:
+      213: 1779556136337214479
+    second: 276_16
+  - first:
+      213: -2278852387718645264
+    second: 276_17
+  - first:
+      213: 2520102718049086451
+    second: 276_18
+  - first:
+      213: -9093510739015010194
+    second: 276_19
+  - first:
+      213: 4632441832719621477
+    second: 276_20
+  - first:
+      213: 7735709388342041115
+    second: 276_21
+  - first:
+      213: 8574754307173201642
+    second: 276_22
+  - first:
+      213: -5248696877111547297
+    second: 276_23
+  - first:
+      213: 2517625045955377267
+    second: 276_24
+  - first:
+      213: 3958790554657270243
+    second: 276_25
+  - first:
+      213: 7791022074800726341
+    second: 276_26
+  - first:
+      213: -842945421490561101
+    second: 276_27
+  - first:
+      213: 6117870324445092361
+    second: 276_28
+  - first:
+      213: -2647111276323938794
+    second: 276_29
+  - first:
+      213: 1651944888214438105
+    second: 276_30
+  - first:
+      213: -3643489737020348045
+    second: 276_31
+  - first:
+      213: -7995822416293588197
+    second: 276_32
+  - first:
+      213: 7263862438880891924
+    second: 276_33
+  - first:
+      213: 215164988881537019
+    second: 276_34
+  - first:
+      213: -7092838142741183413
+    second: 276_35
+  - first:
+      213: 8184468177335931458
+    second: 276_36
+  - first:
+      213: -3327754365062326119
+    second: 276_37
+  - first:
+      213: 3320817845895439413
+    second: 276_38
+  - first:
+      213: -7752149844582197535
+    second: 276_39
+  - first:
+      213: 7738258216255959354
+    second: 276_40
+  - first:
+      213: 4438868431621377513
+    second: 276_41
+  - first:
+      213: -8581475473071604551
+    second: 276_42
+  - first:
+      213: -8925041942437773736
+    second: 276_43
+  - first:
+      213: 2501828486681512107
+    second: 276_44
+  - first:
+      213: -4353005325206912902
+    second: 276_45
+  - first:
+      213: 8947731365832323249
+    second: 276_46
+  - first:
+      213: -1015720415048574219
+    second: 276_47
+  - first:
+      213: 8382497802896482707
+    second: 276_48
+  - first:
+      213: -3969309081491571297
+    second: 276_49
+  - first:
+      213: 3093612920384344045
+    second: 276_50
+  - first:
+      213: 1855709619495094830
+    second: 276_51
+  - first:
+      213: 6885740958521826018
+    second: 276_52
+  - first:
+      213: -3783442089061150060
+    second: 276_53
+  - first:
+      213: 8586109183426261003
+    second: 276_54
+  - first:
+      213: 1774039456716157473
+    second: 276_55
+  - first:
+      213: -5212889021028421395
+    second: 276_56
+  - first:
+      213: -2645341356604646342
+    second: 276_57
+  - first:
+      213: 7245759732123093766
+    second: 276_58
+  - first:
+      213: 6511310293725602685
+    second: 276_59
+  - first:
+      213: -3072343696147979223
+    second: 276_60
+  - first:
+      213: -1381190736581114914
+    second: 276_61
+  - first:
+      213: 2255828834979821716
+    second: 276_62
+  - first:
+      213: 761820110619174727
+    second: 276_63
+  - first:
+      213: 1791004967248578140
+    second: 276_64
+  - first:
+      213: -228381983280131158
+    second: 276_65
+  - first:
+      213: 8527099887061146730
+    second: 276_66
+  - first:
+      213: 2396824196107471193
+    second: 276_67
+  - first:
+      213: -4308117095300362563
+    second: 276_68
+  - first:
+      213: 8606316431109105725
+    second: 276_69
+  - first:
+      213: 3694655638197449672
+    second: 276_70
+  - first:
+      213: 2813746662955136263
+    second: 276_71
+  - first:
+      213: 1782389705966554421
+    second: 276_72
+  - first:
+      213: -4782553324333551237
+    second: 276_73
+  - first:
+      213: -5599679886797065249
+    second: 276_74
+  - first:
+      213: -1456520664718388891
+    second: 276_75
+  - first:
+      213: 5492023444142180391
+    second: 276_76
+  - first:
+      213: 6972785192057212668
+    second: 276_77
+  - first:
+      213: 4418476854968092159
+    second: 276_78
+  - first:
+      213: 3966091965229856867
+    second: 276_79
+  - first:
+      213: 1316033758031265787
+    second: 276_80
+  - first:
+      213: 8331598512901104069
+    second: 276_81
+  - first:
+      213: -2967089870124943341
+    second: 276_82
+  - first:
+      213: -4279173141875802948
+    second: 276_83
+  - first:
+      213: -9077519756103518575
+    second: 276_84
+  - first:
+      213: -3139375574860297184
+    second: 276_85
+  - first:
+      213: -3599834998901603632
+    second: 276_86
+  - first:
+      213: 2548065553636009061
+    second: 276_87
+  - first:
+      213: 5955546368603044035
+    second: 276_88
+  - first:
+      213: 2806692035540135140
+    second: 276_89
+  - first:
+      213: 3126130173264329223
+    second: 276_90
+  - first:
+      213: -7508563406453515569
+    second: 276_91
+  - first:
+      213: 334755533659005041
+    second: 276_92
+  - first:
+      213: 7805738603883153637
+    second: 276_93
+  - first:
+      213: 4358433420356255673
+    second: 276_94
+  - first:
+      213: -3945790655584227750
+    second: 276_95
+  - first:
+      213: 5591633243557147206
+    second: 276_96
+  - first:
+      213: 455582583480460860
+    second: 276_97
+  - first:
+      213: -6066881043141052953
+    second: 276_98
+  - first:
+      213: 8424145913365948617
+    second: 276_99
+  - first:
+      213: -4237995914049683338
+    second: 276_100
+  - first:
+      213: 3875720469777687660
+    second: 276_101
+  - first:
+      213: -5003356638564079368
+    second: 276_102
+  - first:
+      213: -7607786360385823584
+    second: 276_103
+  - first:
+      213: 6740592192821771296
+    second: 276_104
+  - first:
+      213: 7453642363124782464
+    second: 276_105
+  - first:
+      213: -5124186017350552870
+    second: 276_106
+  - first:
+      213: 5527634366026042308
+    second: 276_107
+  - first:
+      213: -2041901385781439441
+    second: 276_108
+  - first:
+      213: 2478008032721968561
+    second: 276_109
+  - first:
+      213: -2759660715877052623
+    second: 276_110
+  - first:
+      213: -4654418192215923857
+    second: 276_111
+  - first:
+      213: -6760610521390652271
+    second: 276_112
+  - first:
+      213: -8909870065069421007
+    second: 276_113
+  - first:
+      213: -1390479726580759435
+    second: 276_114
+  - first:
+      213: 5991245712683574102
+    second: 276_115
+  - first:
+      213: 4749327206083957747
+    second: 276_116
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VFX boss_2_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287bdb168657c7f4f8f40de0d8e5dc3e
+      internalID: 1541914124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_2_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3179d6c03cbe0734eaa03199872c21d5
+      internalID: 545675386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_2_58
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e26591165563044969e2099e1c20c2
+      internalID: 1676686772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_2_59
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43af5001398258e4b933842c0f10de05
+      internalID: -864897184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_2_60
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41734ccdea3c3bd46aeab890b7529e58
+      internalID: -1820904113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_2_61
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd03cbfc71fb4954c9252228d21eeafa
+      internalID: 2110141423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_2_62
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976bc382d872b554a84edf585032de0a
+      internalID: 1595706015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_2_63
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b21bc3b594625d49a62eee45111d771
+      internalID: 1753527606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8a33b1ecf0c73424ab67e0faed3870c3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VFX boss_2_0: -1467112994
+      VFX boss_2_1: 698217447
+      VFX boss_2_10: 291525565
+      VFX boss_2_11: 184964440
+      VFX boss_2_12: -796559331
+      VFX boss_2_13: 32141764
+      VFX boss_2_14: -351230920
+      VFX boss_2_15: 1247820542
+      VFX boss_2_16: -221637402
+      VFX boss_2_17: -857822176
+      VFX boss_2_18: 264087196
+      VFX boss_2_19: 1522748714
+      VFX boss_2_2: 412613865
+      VFX boss_2_20: -592582949
+      VFX boss_2_21: 2101462094
+      VFX boss_2_22: 1884640597
+      VFX boss_2_23: 227497319
+      VFX boss_2_24: -652318103
+      VFX boss_2_25: 2111029648
+      VFX boss_2_26: -1506115839
+      VFX boss_2_27: 1531354828
+      VFX boss_2_28: -584168261
+      VFX boss_2_29: -336297768
+      VFX boss_2_3: -2010211997
+      VFX boss_2_30: 291342215
+      VFX boss_2_31: -1185151589
+      VFX boss_2_32: -1567216721
+      VFX boss_2_33: -110136165
+      VFX boss_2_34: -2055161622
+      VFX boss_2_35: -1930716384
+      VFX boss_2_36: -542328059
+      VFX boss_2_37: 1267739987
+      VFX boss_2_38: -202900293
+      VFX boss_2_39: -264162606
+      VFX boss_2_4: -1135519804
+      VFX boss_2_40: 1791950187
+      VFX boss_2_41: 932836765
+      VFX boss_2_42: 491060777
+      VFX boss_2_43: -900778943
+      VFX boss_2_44: -1505347408
+      VFX boss_2_45: 511722665
+      VFX boss_2_46: 1704803174
+      VFX boss_2_47: 1033107842
+      VFX boss_2_48: 207895487
+      VFX boss_2_49: -1160331036
+      VFX boss_2_5: -111879630
+      VFX boss_2_50: 2122217168
+      VFX boss_2_51: -703680783
+      VFX boss_2_52: 792101759
+      VFX boss_2_53: -775436789
+      VFX boss_2_54: 597669487
+      VFX boss_2_55: 313780680
+      VFX boss_2_56: 1541914124
+      VFX boss_2_57: 545675386
+      VFX boss_2_58: 1676686772
+      VFX boss_2_59: -864897184
+      VFX boss_2_6: -695796933
+      VFX boss_2_60: -1820904113
+      VFX boss_2_61: 2110141423
+      VFX boss_2_62: 1595706015
+      VFX boss_2_63: 1753527606
+      VFX boss_2_64: -1971698613
+      VFX boss_2_65: 1372413640
+      VFX boss_2_66: 591610513
+      VFX boss_2_67: 2002179559
+      VFX boss_2_68: 1837391750
+      VFX boss_2_69: 965774749
+      VFX boss_2_7: -1950873843
+      VFX boss_2_70: 1346299675
+      VFX boss_2_71: 1469957495
+      VFX boss_2_8: -594888953
+      VFX boss_2_9: -1653661594
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

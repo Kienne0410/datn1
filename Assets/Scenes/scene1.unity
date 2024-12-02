@@ -99144,7 +99144,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 359957972}
-  - component: {fileID: 359957973}
   m_Layer: 0
   m_Name: Torche light
   m_TagString: Untagged
@@ -99175,32 +99174,6 @@ Transform:
   - {fileID: 1902379025}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &359957973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359957971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66cc12d7f4e34cd488bd2ef9b90a96a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
-  warningPrefab: {fileID: 0}
-  radius: 10
-  explosionCount: 10
-  delayBetweenExplosions: 0.2
-  warningTime: 1
-  damage: 100
-  cooldownTime: 5
-  explosionSizeRange: {x: 0.5, y: 2}
-  cooldownOverlay: {fileID: 0}
-  skillButton: {fileID: 0}
-  explosionSkillSound: {fileID: 0}
-  warningSound: {fileID: 0}
-  explosionSound: {fileID: 0}
 --- !u!1001 &388896353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100282,7 +100255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2282198603241793738, guid: 9f091868ba962de4ca7b0f9307704143, type: 3}
-  spawnRate: 3
+  spawnRate: 0.5
   spawnRadius: 1.81
 --- !u!1001 &551497237
 PrefabInstance:
@@ -102906,7 +102879,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1739363627
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -129758,11 +129731,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3251383318122159103, guid: c3e62099adf35cd469188065f5f346dd, type: 3}
   m_PrefabInstance: {fileID: 257565113}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1618704615 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3808556273000150154, guid: c3e62099adf35cd469188065f5f346dd, type: 3}
-  m_PrefabInstance: {fileID: 257565113}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1618704617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129775,7 +129743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ac3e27fa5fcce419da16150a526d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 1618704615}
 --- !u!114 &1653585173 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 811181473341688554, guid: 6b9183617ec9b6249b1028bdd11aec51, type: 3}
