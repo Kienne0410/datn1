@@ -1,0 +1,1048 @@
+fileFormatVersion: 2
+guid: db1bff82548e6fc4dbd820f48ebc88ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1552482475284277920
+    second: 448_0
+  - first:
+      213: -2968101299293814966
+    second: 448_1
+  - first:
+      213: 2270506940329014840
+    second: 448_2
+  - first:
+      213: -1520491305029535092
+    second: 448_3
+  - first:
+      213: 3794829569097621589
+    second: 448_4
+  - first:
+      213: -1440602651864497615
+    second: 448_5
+  - first:
+      213: 1607545869797721748
+    second: 448_6
+  - first:
+      213: -3599870358467344259
+    second: 448_7
+  - first:
+      213: 8411308043656826078
+    second: 448_8
+  - first:
+      213: -7281702514264795372
+    second: 448_9
+  - first:
+      213: 7954221780697191414
+    second: 448_10
+  - first:
+      213: 8405689802125769393
+    second: 448_11
+  - first:
+      213: -7992443412259744168
+    second: 448_12
+  - first:
+      213: 2809584212503383947
+    second: 448_13
+  - first:
+      213: 1564772252946378081
+    second: 448_14
+  - first:
+      213: -7786285234724212733
+    second: 448_15
+  - first:
+      213: 2859443185135707176
+    second: 448_16
+  - first:
+      213: -7358080434058120647
+    second: 448_17
+  - first:
+      213: 8372575948752381120
+    second: 448_18
+  - first:
+      213: 7493203446415363504
+    second: 448_19
+  - first:
+      213: 5095914253354295775
+    second: 448_20
+  - first:
+      213: -7308269344963604351
+    second: 448_21
+  - first:
+      213: 4408225792622275293
+    second: 448_22
+  - first:
+      213: 8964510388198758036
+    second: 448_23
+  - first:
+      213: -2293750978718845797
+    second: 448_24
+  - first:
+      213: -706613718060140226
+    second: 448_25
+  - first:
+      213: 9043445186073968074
+    second: 448_26
+  - first:
+      213: 105924980004693425
+    second: 448_27
+  - first:
+      213: 1677987828340796585
+    second: 448_28
+  - first:
+      213: 1502141563581538696
+    second: 448_29
+  - first:
+      213: -1355047009065226912
+    second: 448_30
+  - first:
+      213: -8300537381408145977
+    second: 448_31
+  - first:
+      213: 1708301856673476873
+    second: 448_32
+  - first:
+      213: -1788473784501762636
+    second: 448_33
+  - first:
+      213: -7876267474828617432
+    second: 448_34
+  - first:
+      213: -775120052749020030
+    second: 448_35
+  - first:
+      213: -8246567735189517144
+    second: 448_36
+  - first:
+      213: -8671377543011493592
+    second: 448_37
+  - first:
+      213: -6354603275641723584
+    second: 448_38
+  - first:
+      213: 5171633458831693702
+    second: 448_39
+  - first:
+      213: -4251305216342552998
+    second: 448_40
+  - first:
+      213: 7088846485953284827
+    second: 448_41
+  - first:
+      213: -6382696948481322433
+    second: 448_42
+  - first:
+      213: -2752517890386938866
+    second: 448_43
+  - first:
+      213: -5556438286886152324
+    second: 448_44
+  - first:
+      213: 2905289764738895625
+    second: 448_45
+  - first:
+      213: -3727294372857605247
+    second: 448_46
+  - first:
+      213: 738205120949886586
+    second: 448_47
+  - first:
+      213: 5506412406357812524
+    second: 448_48
+  - first:
+      213: 8466731977100754641
+    second: 448_49
+  - first:
+      213: -4627177037562180993
+    second: 448_50
+  - first:
+      213: -8409626195568258069
+    second: 448_51
+  - first:
+      213: 1677556573982041791
+    second: 448_52
+  - first:
+      213: -1374736194843991430
+    second: 448_53
+  - first:
+      213: -7016784560541854387
+    second: 448_54
+  - first:
+      213: -4620387025250674150
+    second: 448_55
+  - first:
+      213: -8179851625204779733
+    second: 448_56
+  - first:
+      213: 1642816050598601655
+    second: 448_57
+  - first:
+      213: -4971827395816945448
+    second: 448_58
+  - first:
+      213: -8216855836656865860
+    second: 448_59
+  - first:
+      213: -8724028254522952930
+    second: 448_60
+  - first:
+      213: 8204805102590304767
+    second: 448_61
+  - first:
+      213: -5283650253232190728
+    second: 448_62
+  - first:
+      213: -7403723975089982799
+    second: 448_63
+  - first:
+      213: -898278622319123389
+    second: 448_64
+  - first:
+      213: -8174827178855236112
+    second: 448_65
+  - first:
+      213: 1451771654651868865
+    second: 448_66
+  - first:
+      213: -8699344742847356265
+    second: 448_67
+  - first:
+      213: -8706254918908956385
+    second: 448_68
+  - first:
+      213: -8997141797835410770
+    second: 448_69
+  - first:
+      213: 5526673638884435321
+    second: 448_70
+  - first:
+      213: -8912258512122280613
+    second: 448_71
+  - first:
+      213: -4786246992226226182
+    second: 448_72
+  - first:
+      213: -867244545437994713
+    second: 448_73
+  - first:
+      213: -4339565166814571570
+    second: 448_74
+  - first:
+      213: 7778669385149187037
+    second: 448_75
+  - first:
+      213: 1989490838797975384
+    second: 448_76
+  - first:
+      213: 6096975555426311944
+    second: 448_77
+  - first:
+      213: -2001816709844907058
+    second: 448_78
+  - first:
+      213: 8278857032406374433
+    second: 448_79
+  - first:
+      213: -3795118549666135518
+    second: 448_80
+  - first:
+      213: -6565026783032307683
+    second: 448_81
+  - first:
+      213: 791654553031310539
+    second: 448_82
+  - first:
+      213: 3489468498204644302
+    second: 448_83
+  - first:
+      213: 4931581911552465440
+    second: 448_84
+  - first:
+      213: -3709400074657934823
+    second: 448_85
+  - first:
+      213: -485090003533708846
+    second: 448_86
+  - first:
+      213: -6891076559946877532
+    second: 448_87
+  - first:
+      213: 7313965313006363719
+    second: 448_88
+  - first:
+      213: -9186941482654618851
+    second: 448_89
+  - first:
+      213: 7056060073514844691
+    second: 448_90
+  - first:
+      213: 4048183770471122213
+    second: 448_91
+  - first:
+      213: 8086653477895247697
+    second: 448_92
+  - first:
+      213: -1529691644575807404
+    second: 448_93
+  - first:
+      213: -3530117818250383428
+    second: 448_94
+  - first:
+      213: -1923996858524250044
+    second: 448_95
+  - first:
+      213: 1784058542437901934
+    second: 448_96
+  - first:
+      213: -7244362290459087671
+    second: 448_97
+  - first:
+      213: -1736864342773676459
+    second: 448_98
+  - first:
+      213: -7778883677028344542
+    second: 448_99
+  - first:
+      213: -7149152097383427400
+    second: 448_100
+  - first:
+      213: -2409948503978196899
+    second: 448_101
+  - first:
+      213: 3841383504123026639
+    second: 448_102
+  - first:
+      213: -434729413842217796
+    second: 448_103
+  - first:
+      213: 8402514586618061113
+    second: 448_104
+  - first:
+      213: 7202693163141251229
+    second: 448_105
+  - first:
+      213: -6689001336313839607
+    second: 448_106
+  - first:
+      213: 3454778834702653573
+    second: 448_107
+  - first:
+      213: -9151127451727547988
+    second: 448_108
+  - first:
+      213: -1963865070444277624
+    second: 448_109
+  - first:
+      213: -7825729548116153676
+    second: 448_110
+  - first:
+      213: -6636826492172716862
+    second: 448_111
+  - first:
+      213: 614106932470528906
+    second: 448_112
+  - first:
+      213: -1426340458478199451
+    second: 448_113
+  - first:
+      213: 3415870773533146116
+    second: 448_114
+  - first:
+      213: 5216669002220840409
+    second: 448_115
+  - first:
+      213: 3270475372229103367
+    second: 448_116
+  - first:
+      213: 8588166142606307325
+    second: 448_117
+  - first:
+      213: -3321088983474926757
+    second: 448_118
+  - first:
+      213: 3551722447908671871
+    second: 448_119
+  - first:
+      213: -8500319465585914243
+    second: 448_120
+  - first:
+      213: 921589207400687323
+    second: 448_121
+  - first:
+      213: -8973003594987037463
+    second: 448_122
+  - first:
+      213: 8847196951938863411
+    second: 448_123
+  - first:
+      213: -6304079380630470349
+    second: 448_124
+  - first:
+      213: -1932000297443331544
+    second: 448_125
+  - first:
+      213: -3595929783363258738
+    second: 448_126
+  - first:
+      213: 1025029571835186706
+    second: 448_127
+  - first:
+      213: 1135736679387628764
+    second: 448_128
+  - first:
+      213: -3919425275729472263
+    second: 448_129
+  - first:
+      213: 4399289956395486009
+    second: 448_130
+  - first:
+      213: 128343146235879986
+    second: 448_131
+  - first:
+      213: 1259555504212300741
+    second: 448_132
+  - first:
+      213: 495109660727594319
+    second: 448_133
+  - first:
+      213: 8952050571729973195
+    second: 448_134
+  - first:
+      213: -2534174098871611613
+    second: 448_135
+  - first:
+      213: 7974180281187432909
+    second: 448_136
+  - first:
+      213: 1757394740657825421
+    second: 448_137
+  - first:
+      213: 2394659298103745121
+    second: 448_138
+  - first:
+      213: 9216895173599719941
+    second: 448_139
+  - first:
+      213: -5814328585310429010
+    second: 448_140
+  - first:
+      213: -7302189249246295780
+    second: 448_141
+  - first:
+      213: -5356025958146837575
+    second: 448_142
+  - first:
+      213: -3123474272012773473
+    second: 448_143
+  - first:
+      213: 7723596771333757646
+    second: 448_144
+  - first:
+      213: 8702886356621896220
+    second: 448_145
+  - first:
+      213: -1786528699305208883
+    second: 448_146
+  - first:
+      213: 9213580066190130210
+    second: 448_147
+  - first:
+      213: -6248451138959137659
+    second: 448_148
+  - first:
+      213: -1313548072752814090
+    second: 448_149
+  - first:
+      213: -6661693087730863270
+    second: 448_150
+  - first:
+      213: -2195819776508926566
+    second: 448_151
+  - first:
+      213: -2679130786659179604
+    second: 448_152
+  - first:
+      213: 1695265655645152592
+    second: 448_153
+  - first:
+      213: -8280956788693443659
+    second: 448_154
+  - first:
+      213: 171731460876367205
+    second: 448_155
+  - first:
+      213: -7551584860185593814
+    second: 448_156
+  - first:
+      213: 2797885630649970642
+    second: 448_157
+  - first:
+      213: -2261514834131289691
+    second: 448_158
+  - first:
+      213: 6649677543040728899
+    second: 448_159
+  - first:
+      213: -3918766294349697852
+    second: 448_160
+  - first:
+      213: 6954308608332067819
+    second: 448_161
+  - first:
+      213: 1562218488636852172
+    second: 448_162
+  - first:
+      213: -7030269481904829725
+    second: 448_163
+  - first:
+      213: 251531320023690953
+    second: 448_164
+  - first:
+      213: -6983437139246418626
+    second: 448_165
+  - first:
+      213: -5317770587247972804
+    second: 448_166
+  - first:
+      213: -4898485649912229522
+    second: 448_167
+  - first:
+      213: -8274249713539618152
+    second: 448_168
+  - first:
+      213: -2135496100407955666
+    second: 448_169
+  - first:
+      213: 9073093196735366959
+    second: 448_170
+  - first:
+      213: -8935555329895282262
+    second: 448_171
+  - first:
+      213: -5218829663015855216
+    second: 448_172
+  - first:
+      213: -3493911996712146217
+    second: 448_173
+  - first:
+      213: 661349543705887388
+    second: 448_174
+  - first:
+      213: -3801511212207357099
+    second: 448_175
+  - first:
+      213: -463227802678588349
+    second: 448_176
+  - first:
+      213: -7670140317547292784
+    second: 448_177
+  - first:
+      213: -4114718684855611036
+    second: 448_178
+  - first:
+      213: 7302249779390766993
+    second: 448_179
+  - first:
+      213: -2962244516366097899
+    second: 448_180
+  - first:
+      213: -6178483445471663236
+    second: 448_181
+  - first:
+      213: 6161232252489183125
+    second: 448_182
+  - first:
+      213: -4055933280734563454
+    second: 448_183
+  - first:
+      213: -4166283816858447
+    second: 448_184
+  - first:
+      213: -2080357942780314001
+    second: 448_185
+  - first:
+      213: -5907092594162432588
+    second: 448_186
+  - first:
+      213: 818470277794935293
+    second: 448_187
+  - first:
+      213: 8245572617412340659
+    second: 448_188
+  - first:
+      213: 3594601661528189425
+    second: 448_189
+  - first:
+      213: -3926579108577560958
+    second: 448_190
+  - first:
+      213: 3785211888332822762
+    second: 448_191
+  - first:
+      213: 1757107970627855561
+    second: 448_192
+  - first:
+      213: 9164514641908199678
+    second: 448_193
+  - first:
+      213: -1187829759409111069
+    second: 448_194
+  - first:
+      213: -2721261922648032118
+    second: 448_195
+  - first:
+      213: 2054513632724724749
+    second: 448_196
+  - first:
+      213: -8818287944834854273
+    second: 448_197
+  - first:
+      213: 7009441945412565075
+    second: 448_198
+  - first:
+      213: 4681154646695207531
+    second: 448_199
+  - first:
+      213: 779731022428302981
+    second: 448_200
+  - first:
+      213: -7881957723237231584
+    second: 448_201
+  - first:
+      213: -860654419804585045
+    second: 448_202
+  - first:
+      213: 4009782602170602618
+    second: 448_203
+  - first:
+      213: 3933082147874923035
+    second: 448_204
+  - first:
+      213: -6301508283500135205
+    second: 448_205
+  - first:
+      213: -7170112931076738550
+    second: 448_206
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VFX boss_4_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8adbb9759d9a24ab3e57c47c24715a
+      internalID: 1848247524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3e8e1820850044b8150187a41b9163
+      internalID: -1538954196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3605dad4341097f4fa6f0b4b11342285
+      internalID: 900733198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2dd83c4cc6bc7429dbdfb40e65fb4d
+      internalID: 590023568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ed4a682407a5142b5dd15c0fe5b31d
+      internalID: -529938104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbd87ecda243854b8832e359fc53a6a
+      internalID: 1699863354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2e7edab19e2cb49aaf8c6897cbe998
+      internalID: -1310602651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_77
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 272664383318cea44bebeafb32bf30a2
+      internalID: -723166978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1448b08c9a94044fb66e65535ce30bc
+      internalID: -354520614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_4_79
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f0ec3f328fd5c4db81e968b8d1818a
+      internalID: 397530446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 05983684fb883004a87853c93e198e79
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VFX boss_4_0: -1434578184
+      VFX boss_4_1: -1655993970
+      VFX boss_4_10: 350071648
+      VFX boss_4_11: -1870516502
+      VFX boss_4_12: 667335777
+      VFX boss_4_13: 505267903
+      VFX boss_4_14: 1730680703
+      VFX boss_4_15: 123707302
+      VFX boss_4_16: 1427815848
+      VFX boss_4_17: 1727676253
+      VFX boss_4_18: 1465074650
+      VFX boss_4_19: 465540844
+      VFX boss_4_2: -1007744739
+      VFX boss_4_20: -1825148176
+      VFX boss_4_21: -648457690
+      VFX boss_4_22: -454424954
+      VFX boss_4_23: -1332810558
+      VFX boss_4_24: 1166078749
+      VFX boss_4_25: -1168955890
+      VFX boss_4_26: -1905911519
+      VFX boss_4_27: -633504985
+      VFX boss_4_28: -1226166523
+      VFX boss_4_29: -1699199770
+      VFX boss_4_3: -1343113705
+      VFX boss_4_30: 1097647066
+      VFX boss_4_31: -1528870741
+      VFX boss_4_32: -1175153243
+      VFX boss_4_33: 217281613
+      VFX boss_4_34: -1082800903
+      VFX boss_4_35: -725912746
+      VFX boss_4_36: 1410126293
+      VFX boss_4_37: 1711381825
+      VFX boss_4_38: -230210489
+      VFX boss_4_39: 1384457829
+      VFX boss_4_4: 174540019
+      VFX boss_4_40: 1430666291
+      VFX boss_4_41: -531616364
+      VFX boss_4_42: -851498543
+      VFX boss_4_43: -421851413
+      VFX boss_4_44: -1704267210
+      VFX boss_4_45: -937758839
+      VFX boss_4_46: 971715337
+      VFX boss_4_47: 749771139
+      VFX boss_4_48: -591825979
+      VFX boss_4_49: 364120431
+      VFX boss_4_5: 598698118
+      VFX boss_4_50: 1509733233
+      VFX boss_4_51: -1986963928
+      VFX boss_4_52: -1236459799
+      VFX boss_4_53: 553711354
+      VFX boss_4_54: 1683573674
+      VFX boss_4_55: 331517589
+      VFX boss_4_56: 206289128
+      VFX boss_4_57: 781061263
+      VFX boss_4_58: -448772257
+      VFX boss_4_59: 2015739845
+      VFX boss_4_6: 1898625267
+      VFX boss_4_60: 179479587
+      VFX boss_4_61: -1200380723
+      VFX boss_4_62: 1846136734
+      VFX boss_4_63: -1505404024
+      VFX boss_4_64: 895635118
+      VFX boss_4_65: -292378131
+      VFX boss_4_66: -568749579
+      VFX boss_4_67: 188958999
+      VFX boss_4_68: -1149685382
+      VFX boss_4_69: -2019515755
+      VFX boss_4_7: -1050980036
+      VFX boss_4_70: 1848247524
+      VFX boss_4_71: -1538954196
+      VFX boss_4_72: 900733198
+      VFX boss_4_73: 590023568
+      VFX boss_4_74: -529938104
+      VFX boss_4_75: 1699863354
+      VFX boss_4_76: -1310602651
+      VFX boss_4_77: -723166978
+      VFX boss_4_78: -354520614
+      VFX boss_4_79: 397530446
+      VFX boss_4_8: 68245781
+      VFX boss_4_80: -793226635
+      VFX boss_4_81: 1085585417
+      VFX boss_4_82: -859768060
+      VFX boss_4_83: 2134635408
+      VFX boss_4_84: 1293366899
+      VFX boss_4_85: -170572614
+      VFX boss_4_86: -323772797
+      VFX boss_4_87: 1320124380
+      VFX boss_4_88: -104892369
+      VFX boss_4_89: -425810163
+      VFX boss_4_9: 808481178
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

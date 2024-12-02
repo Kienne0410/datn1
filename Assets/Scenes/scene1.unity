@@ -100255,7 +100255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 2282198603241793738, guid: 9f091868ba962de4ca7b0f9307704143, type: 3}
-  spawnRate: 3
+  spawnRate: 0.5
   spawnRadius: 1.81
 --- !u!1001 &551497237
 PrefabInstance:
@@ -102879,7 +102879,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1739363627
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -129731,11 +129731,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3251383318122159103, guid: c3e62099adf35cd469188065f5f346dd, type: 3}
   m_PrefabInstance: {fileID: 257565113}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1618704615 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3808556273000150154, guid: c3e62099adf35cd469188065f5f346dd, type: 3}
-  m_PrefabInstance: {fileID: 257565113}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1618704617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129748,7 +129743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ac3e27fa5fcce419da16150a526d88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 1618704615}
 --- !u!114 &1653585173 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 811181473341688554, guid: 6b9183617ec9b6249b1028bdd11aec51, type: 3}

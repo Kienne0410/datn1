@@ -1,0 +1,411 @@
+fileFormatVersion: 2
+guid: 405785941d819c945910b4b38bda237c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1911189370502641363
+    second: 323_0
+  - first:
+      213: 2504521885246361963
+    second: 323_1
+  - first:
+      213: 6907044015624152427
+    second: 323_2
+  - first:
+      213: -8873686781903442851
+    second: 323_3
+  - first:
+      213: 2729760631256892267
+    second: 323_4
+  - first:
+      213: -7644772013690146770
+    second: 323_5
+  - first:
+      213: -794253538906201394
+    second: 323_6
+  - first:
+      213: 3024436174759783843
+    second: 323_7
+  - first:
+      213: -8920536354152135564
+    second: 323_8
+  - first:
+      213: 250325499742951050
+    second: 323_9
+  - first:
+      213: 7714155373303944319
+    second: 323_10
+  - first:
+      213: 810520227652053490
+    second: 323_11
+  - first:
+      213: -4578301589137841866
+    second: 323_12
+  - first:
+      213: 4919871799116938627
+    second: 323_13
+  - first:
+      213: 6894447818800027341
+    second: 323_14
+  - first:
+      213: -8311387828672975314
+    second: 323_15
+  - first:
+      213: 2152974643860665113
+    second: 323_16
+  - first:
+      213: -3531078881033511895
+    second: 323_17
+  - first:
+      213: -1550881053547220096
+    second: 323_18
+  - first:
+      213: -3949796434226185613
+    second: 323_19
+  - first:
+      213: -3399968996934701353
+    second: 323_20
+  - first:
+      213: -3031373277375233981
+    second: 323_21
+  - first:
+      213: 5230848790346540532
+    second: 323_22
+  - first:
+      213: 3523517031553127290
+    second: 323_23
+  - first:
+      213: -6272139829311264229
+    second: 323_24
+  - first:
+      213: 4112014871723416173
+    second: 323_25
+  - first:
+      213: -7599943343383244192
+    second: 323_26
+  - first:
+      213: -5581221705131153270
+    second: 323_27
+  - first:
+      213: -8042809564312914475
+    second: 323_28
+  - first:
+      213: -6057050969880371489
+    second: 323_29
+  - first:
+      213: -4453661420447256611
+    second: 323_30
+  - first:
+      213: -4493451377216077196
+    second: 323_31
+  - first:
+      213: -1230107996070330414
+    second: 323_32
+  - first:
+      213: 780714189377919915
+    second: 323_33
+  - first:
+      213: 877316134270632736
+    second: 323_34
+  - first:
+      213: -5633157520577532924
+    second: 323_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VFX boss_3_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709a569a36535b04dbf451c3a438a3e3
+      internalID: -718368661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_3_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e38a3de72f19b4096afa6b742ca77a
+      internalID: -1878648090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_3_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0cac04747942d40981303b08152251
+      internalID: -1485605140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_3_45
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33275414d3d8b3e4fb0b757f1690dde5
+      internalID: -1241354984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_3_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0021ec035fc47d046a070913a366b491
+      internalID: 883338705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VFX boss_3_47
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f0e4213eaa813344b18a0ab38b3fc89
+      internalID: 640030174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 49c59d87af95792489e9030fe1d23848
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VFX boss_3_0: 1037562413
+      VFX boss_3_1: -638967136
+      VFX boss_3_10: -286965042
+      VFX boss_3_11: 934355327
+      VFX boss_3_12: -1064119315
+      VFX boss_3_13: 487407052
+      VFX boss_3_14: -1947918619
+      VFX boss_3_15: -1508673051
+      VFX boss_3_16: -878849471
+      VFX boss_3_17: -1377051385
+      VFX boss_3_18: 911148729
+      VFX boss_3_19: -922273740
+      VFX boss_3_2: -184463896
+      VFX boss_3_20: -344047775
+      VFX boss_3_21: 839681038
+      VFX boss_3_22: 263364343
+      VFX boss_3_23: 1121596822
+      VFX boss_3_24: 500111849
+      VFX boss_3_25: -1953591745
+      VFX boss_3_26: -1506513798
+      VFX boss_3_27: -1500728702
+      VFX boss_3_28: -1732483653
+      VFX boss_3_29: 438384755
+      VFX boss_3_3: 336229963
+      VFX boss_3_30: -1160271038
+      VFX boss_3_31: -2094124130
+      VFX boss_3_32: -1963483873
+      VFX boss_3_33: -1809754630
+      VFX boss_3_34: 1247483222
+      VFX boss_3_35: 109915612
+      VFX boss_3_36: -1945672674
+      VFX boss_3_37: -1693408590
+      VFX boss_3_38: -626146400
+      VFX boss_3_39: -926084381
+      VFX boss_3_4: -47074875
+      VFX boss_3_40: 586411765
+      VFX boss_3_41: 1024691501
+      VFX boss_3_42: -718368661
+      VFX boss_3_43: -1878648090
+      VFX boss_3_44: -1485605140
+      VFX boss_3_45: -1241354984
+      VFX boss_3_46: 883338705
+      VFX boss_3_47: 640030174
+      VFX boss_3_48: -1482714804
+      VFX boss_3_49: 1662621734
+      VFX boss_3_5: -1223976446
+      VFX boss_3_50: -1476890180
+      VFX boss_3_51: -963564974
+      VFX boss_3_52: 1437612526
+      VFX boss_3_53: 1953574827
+      VFX boss_3_6: 1288738289
+      VFX boss_3_7: 1294509037
+      VFX boss_3_8: 1079775495
+      VFX boss_3_9: -1503198980
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

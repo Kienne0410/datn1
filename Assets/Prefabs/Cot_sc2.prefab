@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4277935606003682850}
   - component: {fileID: 5837674228756070583}
   - component: {fileID: 6258953425674873181}
+  - component: {fileID: 1267575523386856256}
   m_Layer: 0
   m_Name: Cot_sc2
   m_TagString: Untagged
@@ -152,6 +153,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65299b86b3660b94f86cc21a94b7aa0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1267575523386856256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2669870236611470352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 119f6839cd2065948bbb5266323be42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparencyAmount: 0.8
+  fadeTime: 0.4
 --- !u!1 &6702075770183895641
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5718465001127607315}
   - component: {fileID: 2670113774587699758}
+  - component: {fileID: 2984769727654057788}
   m_Layer: 0
   m_Name: Light 2D
   m_TagString: Untagged
@@ -236,3 +252,25 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!95 &2984769727654057788
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702075770183895641}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05c4d5e2f84573f4aabf54c9105eeeec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
