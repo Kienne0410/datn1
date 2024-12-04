@@ -37,5 +37,7 @@ public class EnemyPathfinding : MonoBehaviour
 
     public void StopMoving() {
         moveDir = Vector3.zero;
+        rb.linearVelocity = Vector2.zero;
+        
     }
 }

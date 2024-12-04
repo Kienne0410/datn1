@@ -1,11 +1,11 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
-public class BossController : MonoBehaviour
+public class DropBomBossController : MonoBehaviour
 {
     public GameObject explosionPrefab; // Prefab vụ nổ
     public GameObject warningPrefab; // Prefab cảnh báo
-    public Transform player; // Đối tượng người chơi
 
     // Tấn công
     public float explosionRadius = 5f; // Bán kính vụ nổ
@@ -16,65 +16,26 @@ public class BossController : MonoBehaviour
     public float cooldownTime = 5f; // Thời gian hồi chiêu
     public Vector2 explosionSizeRange = new Vector2(0.5f, 2f); // Kích thước vụ nổ ngẫu nhiên (min, max)
 
-    // Di chuyển
-    public float moveSpeed = 3f; // Tốc độ di chuyển
-    public float chaseRange = 8f; // Phạm vi đuổi theo người chơi
-    public float attackRange = 5f; // Phạm vi để bắt đầu tấn công
-    public float stopDistance = 2f; // Khoảng cách dừng trước người chơi
-
-    private bool isAttacking = false;
-    private bool isCooldown = false;
-
-    private void Update()
+    private Transform _playerTransform;
+    protected void Start()
     {
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= attackRange && !isAttacking && !isCooldown)
-        {
-            // Tấn công nếu người chơi trong phạm vi
-            StartCoroutine(ActivateSkill());
-        }
-        else if (distanceToPlayer <= chaseRange && distanceToPlayer > stopDistance)
-        {
-            // Đuổi theo người chơi nếu trong phạm vi đuổi và ngoài phạm vi tấn công
-            ChasePlayer();
-        }
+        _playerTransform = PlayerController.Instance.transform;
     }
 
-    private void ChasePlayer()
+    public IEnumerator ActivateSkill()
     {
-        Vector3 direction = (player.position - transform.position).normalized;
-        transform.position += direction * moveSpeed * Time.deltaTime;
-
-        // Xoay Boss hướng về phía người chơi
-        if (direction.x > 0)
-            transform.localScale = new Vector3(1, 1, 1);
-        else if (direction.x < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
-    }
-
-    private IEnumerator ActivateSkill()
-    {
-        isAttacking = true;
-        isCooldown = true;
 
         // Tạo các vụ nổ xung quanh vị trí người chơi
         for (int i = 0; i < explosionCount; i++)
         {
             Vector2 randomPoint = Random.insideUnitCircle * explosionRadius;
-            Vector3 explosionPosition = player.position + new Vector3(randomPoint.x, randomPoint.y, 0);
+            Vector3 explosionPosition = _playerTransform.position + new Vector3(randomPoint.x, randomPoint.y, 0);
 
             // Hiển thị cảnh báo trước khi phát nổ
             StartCoroutine(ShowWarningAndExplode(explosionPosition));
 
             yield return new WaitForSeconds(delayBetweenExplosions);
         }
-
-        isAttacking = false;
-
-        // Hồi chiêu
-        yield return new WaitForSeconds(cooldownTime);
-        isCooldown = false;
     }
 
     private IEnumerator ShowWarningAndExplode(Vector3 position)
@@ -96,7 +57,7 @@ public class BossController : MonoBehaviour
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(position, randomSize / 2f);
         foreach (Collider2D hit in hitColliders)
         {
-            if (hit.transform == player)
+            if (hit.transform == _playerTransform)
             {
                 Debug.Log($"Player takes {explosionDamage} damage from explosion!");
                 // Thêm logic gây sát thương cho người chơi tại đây
@@ -106,18 +67,5 @@ public class BossController : MonoBehaviour
         // Hủy cảnh báo và vụ nổ
         Destroy(warning);
         Destroy(explosion, 2f);
-    }
-
-    private void OnDrawGizmos()
-    {
-        // Vẽ phạm vi đuổi theo và tấn công trong chế độ Scene
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, chaseRange);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(player.position, explosionRadius);
     }
 }

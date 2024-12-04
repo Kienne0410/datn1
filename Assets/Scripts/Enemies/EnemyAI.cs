@@ -8,9 +8,9 @@ public class EnemyAI : MonoBehaviour
 {
     [Header("Enemy Stats")] 
     [SerializeField]
-    private float _speedRoaming = 2f;
+    protected float _speedRoaming = 2f;
 
-    [SerializeField] private float _speedChasing = 4f;
+    [SerializeField] protected float _speedChasing = 4f;
     [SerializeField] private float _speedAttacking = 5f;
     [SerializeField] protected float _attackRange = 2f;
     [SerializeField] protected float _fieldOfViewToChase = 10f;
@@ -29,19 +29,21 @@ public class EnemyAI : MonoBehaviour
     protected enum State {
         Roaming,
         Chase,
-        Attack
+        Attack,
+        DropBom,
+        Dodge,
     }
 
-    private Vector2 roamPosition;
+    protected Vector2 roamPosition;
     private float timeRoaming = 0f;
     
 
-    private void Start() {
+    protected virtual void Start() {
         _playerTransform = PlayerController.Instance.transform;
         roamPosition = GetRoamingPosition();
     }
 
-    protected virtual void Update() 
+    protected virtual void Update()
     {
         float _distanceToPlayer = Vector2.Distance(transform.position, _playerTransform.position);
         switch (_currentState)
@@ -81,7 +83,7 @@ public class EnemyAI : MonoBehaviour
         
     }
 
-    protected void Roaming() {
+    protected virtual void Roaming() {
         timeRoaming += Time.deltaTime;
 
         _enemyPathfinding.MoveTo(roamPosition, _speedRoaming);

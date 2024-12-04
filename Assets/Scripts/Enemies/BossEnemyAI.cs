@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossEnemyAI : EnemyAI
 {
-    protected override void Update() 
+    protected override void Update()
     {
         float _distanceToPlayer = Vector2.Distance(transform.position, _playerTransform.position);
         switch (_currentState)
@@ -45,7 +45,7 @@ public class BossEnemyAI : EnemyAI
         
     }
     protected override void AttackPlayer() {
-    
+        
         if (_attackRange != 0 && canAttack) {
             _enemyPathfinding.StopMoving();
             canAttack = false;  
@@ -56,7 +56,6 @@ public class BossEnemyAI : EnemyAI
             // } else {
             //     _enemyPathfinding.MoveTo(roamPosition, _speedAttacking);
             // }
-    
             StartCoroutine(AttackCooldownRoutine());
         }
     }
