@@ -3344,7 +3344,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1739363627
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -56732,15 +56732,15 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 25.169617, y: 70.24957}
-      - {x: 25.330189, y: 73.32147}
-      - {x: 25.41957, y: 75.44452}
-      - {x: -25.092964, y: 75.47917}
-      - {x: -25.076572, y: 71.15428}
-      - {x: -24.387423, y: -8.466354}
-      - {x: 24.806297, y: -8.535343}
-      - {x: 24.71531, y: -3.2848225}
-      - {x: 25.33043, y: 66.440956}
+    - - {x: 31.024609, y: 61.20095}
+      - {x: 30.919044, y: 66.668076}
+      - {x: 31.274563, y: 79.17041}
+      - {x: -29.617275, y: 79.20508}
+      - {x: -28.802479, y: 65.831566}
+      - {x: -29.44401, y: -11.127712}
+      - {x: 32.790375, y: -10.664433}
+      - {x: 30.836433, y: -2.752552}
+      - {x: 31.185417, y: 55.26324}
   m_UseDelaunayMesh: 0
 --- !u!1001 &1367997979
 PrefabInstance:
