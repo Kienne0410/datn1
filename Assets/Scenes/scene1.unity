@@ -129918,6 +129918,7 @@ Transform:
   m_Children:
   - {fileID: 2097393611}
   - {fileID: 1721030667}
+  - {fileID: 2061329490}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1906009575
@@ -130485,7 +130486,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1906009574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2061329491
 MonoBehaviour:
@@ -130499,6 +130500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b64ce07d4d8a1439aeaf5216b6aad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
 --- !u!1 &2068470567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2306737947107475419, guid: 17a12299b7e3f244384ba7a02c247a94, type: 3}
@@ -130983,6 +130985,7 @@ GameObject:
   - component: {fileID: 2133401181}
   - component: {fileID: 2133401180}
   - component: {fileID: 2133401185}
+  - component: {fileID: 2133401186}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -131112,6 +131115,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthBarSlider: {fileID: 1586973272}
   _healthBarText: {fileID: 989222783}
+--- !u!114 &2133401186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133401179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501234daedd8f594fa149d6f0107fa5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreText: {fileID: 212317117}
 --- !u!1001 &142967470691648340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132604,7 +132620,6 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 2061329490}
   - {fileID: 1758419052}
   - {fileID: 8124360135412344597}
   - {fileID: 1314133919}
