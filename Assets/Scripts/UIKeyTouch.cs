@@ -31,13 +31,8 @@ public class UIKeyTouch : MonoBehaviour
 
     public void DisplayOnTab()
     {
-        PauseGame(!OnTab.activeSelf);
+        GameManager.Instance.PauseGame(!OnTab.activeSelf);
         OnTab.SetActive(!OnTab.activeSelf);
-    }
-
-    private void PauseGame(bool pause)
-    {
-        Time.timeScale = pause ? 0 : 1;
     }
 
     public void LoadMenu()

@@ -15,7 +15,7 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
         }
 
         if (!gameObject.transform.parent) {
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
     }
 }
