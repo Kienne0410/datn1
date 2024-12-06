@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0) {
             Instantiate(deathVFXPrefab, transform.position, Quaternion.identity);
             Destroy(gameObject);
-            EventManager.OnScoreIncrease.Invoke();
+            EventManager<GameEvent>.RaiseAction(GameEvent.OnScoreIncrease);
         }
     }
 }

@@ -10,13 +10,15 @@ public class GameManager : Singleton<GameManager>
     {
         base.Awake();
         DontDestroyOnLoad(this.gameObject);
-        EventManager.OnScoreIncrease += OnScoreIncrease;
+        EventManager<GameEvent>.SubscribeAction(GameEvent.OnScoreIncrease, (Action)OnScoreIncrease);
     }
+    
+    
 
     private void OnDestroy()
     {
         // K cần vì k bị destroy đi, nhưng viết cho đúng bản chất quản lí Event
-        EventManager.OnScoreIncrease -= OnScoreIncrease;
+        EventManager<GameEvent>.SubscribeAction(GameEvent.OnScoreIncrease, (Action)OnScoreIncrease);
     }
 
     public void PauseGame(bool status)
@@ -28,6 +30,10 @@ public class GameManager : Singleton<GameManager>
     private void OnScoreIncrease()
     {
         score++;
+    }
+    private void OnScoreIncrease(int addScore)
+    {
+        score = score + addScore;
     }
 
     public bool GetIsPaused()

@@ -19,7 +19,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _roamChangeDirFloat = 2f;
     [SerializeField] private bool _stopMovingWhileAttacking = false;
     protected State _currentState = State.Roaming;
-    [Header("Other")] [SerializeField] protected Animator _animator;
+    [Header("Other")] public Animator _animator;
     protected Transform _playerTransform;
     [SerializeField] protected EnemyPathfinding _enemyPathfinding;
 
