@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 2eaa37181b96fe647b9aa683ed7e1062
+guid: 5dda42ed8b9519e429ac2ef5de6e701c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,12 +67,12 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,7 +93,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,7 +106,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,337 +123,195 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Attlat panel 2_0
+      name: gach in lab_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 786
-        width: 354
-        height: 472
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf46ffd59c9a7bf4f8c98bc7a6d5695e
-      internalID: 1380667292
+      spriteID: 15aa56e7de60d664db87deb36489fd68
+      internalID: 2035420783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attlat panel 2_1
+      name: gach in lab_1
       rect:
         serializedVersion: 2
-        x: 375
-        y: 1117
-        width: 96
-        height: 140
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e108dc8740d7314c8b0a14524c49fdb
-      internalID: -60383039
+      spriteID: 73546bf6ce0ca3a4f81034505b98c855
+      internalID: 172878161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attlat panel 2_2
+      name: gach in lab_2
       rect:
         serializedVersion: 2
-        x: 492
-        y: 1104
-        width: 163
-        height: 152
+        x: 32
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 645aff521e92db34a86340eaaa8dce64
-      internalID: 1021533375
+      spriteID: 06fc535f8b846bb419f3d59919f6e869
+      internalID: 832377540
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attlat panel 2_3
+      name: gach in lab_3
       rect:
         serializedVersion: 2
-        x: 987
-        y: 858
-        width: 29
-        height: 383
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6b76c05589db41488d9c6d30e255676
-      internalID: 1023100585
+      spriteID: c24b464b8901e3e458f56cc9a6399eac
+      internalID: 1872620151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attlat panel 2_4
+      name: gach in lab_4
       rect:
         serializedVersion: 2
-        x: 442
-        y: 997
-        width: 76
-        height: 76
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 38, y: 38, z: 38, w: 38}
-      customData: 
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc0121f81e4056f4fa1a2819c941a065
-      internalID: -937667379
+      spriteID: 7bc42a4e47727db4d840404437196ed9
+      internalID: -1993333803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attlat panel 2_5
+      name: gach in lab_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0400bf21722db2344a9f5035e2c3ef7c
+      internalID: -1481413315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gach in lab_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 778
-        height: 170
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2df6b9ae4af05845b53d67d0868f37b
-      internalID: -692615274
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attlat panel 2_6
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 784
-        width: 354
-        height: 102
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69d42d60ae6a5904e9d4eb481096133c
-      internalID: -538116813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attlat panel 2_7
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 696
-        width: 45
-        height: 50
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9431838bc1f6d34394ab30f4a6cc411
-      internalID: 46972154
+      spriteID: 98cea9cabaf47fb45b53751e13918894
+      internalID: 1877125094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attlat panel 2_8
+      name: gach in lab_7
       rect:
         serializedVersion: 2
-        x: 67
-        y: 646
-        width: 89
-        height: 100
+        x: 16
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a148b05efd4ba04daa0ae6cebf507b1
-      internalID: -1838908441
+      spriteID: 318c3cd2036aadb4ab00183026bd2dfb
+      internalID: -88428081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attlat panel 2_9
+      name: gach in lab_8
       rect:
         serializedVersion: 2
-        x: 1
-        y: 454
-        width: 133
-        height: 150
+        x: 32
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2342d28a7722ec7459ce1512b98645e9
-      internalID: 720620487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attlat panel 2_10
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 189
-        width: 178
-        height: 199
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5fcfbd1dfc957b4d81ca0fb7aea73e2
-      internalID: -59156879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attlat panel 2_11
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 188
-        width: 221
-        height: 249
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0962b62aab822e343b2fee43e8da78ae
-      internalID: 808554259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attlat panel 2_12
-      rect:
-        serializedVersion: 2
-        x: 697
-        y: 959
-        width: 266
-        height: 300
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c4d98f55fb7b64439c4bc71e9878b8b
-      internalID: 1585762985
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attlat panel 2_13
-      rect:
-        serializedVersion: 2
-        x: 235
-        y: 398
-        width: 308
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 217840e8f0557f54694667e395c7d1ab
-      internalID: 1196879250
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attlat panel 2_14
-      rect:
-        serializedVersion: 2
-        x: 556
-        y: 347
-        width: 354
-        height: 398
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4204373e201e78945a78aec477cec1e5
-      internalID: 1458550984
+      spriteID: 7a937880233b60548a09a731e102310a
+      internalID: -1440203801
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
-    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -463,24 +321,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    spriteCustomMetadata:
-      entries: []
     nameFileIdTable:
-      Attlat panel 2_0: 1380667292
-      Attlat panel 2_1: -60383039
-      Attlat panel 2_10: -59156879
-      Attlat panel 2_11: 808554259
-      Attlat panel 2_12: 1585762985
-      Attlat panel 2_13: 1196879250
-      Attlat panel 2_14: 1458550984
-      Attlat panel 2_2: 1021533375
-      Attlat panel 2_3: 1023100585
-      Attlat panel 2_4: -937667379
-      Attlat panel 2_5: -692615274
-      Attlat panel 2_6: -538116813
-      Attlat panel 2_7: 46972154
-      Attlat panel 2_8: -1838908441
-      Attlat panel 2_9: 720620487
+      gach in lab_0: 2035420783
+      gach in lab_1: 172878161
+      gach in lab_2: 832377540
+      gach in lab_3: 1872620151
+      gach in lab_4: -1993333803
+      gach in lab_5: -1481413315
+      gach in lab_6: 1877125094
+      gach in lab_7: -88428081
+      gach in lab_8: -1440203801
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

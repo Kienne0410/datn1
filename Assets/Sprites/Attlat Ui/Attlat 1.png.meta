@@ -3,7 +3,7 @@ guid: d363b1a278885d84892b1645403f9705
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -67,7 +67,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,7 +93,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -106,7 +106,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -127,12 +127,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 10
-        y: 974
+        y: 979
         width: 62
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -147,13 +148,14 @@ TextureImporter:
       name: Attlat 1_1
       rect:
         serializedVersion: 2
-        x: 129
-        y: 974
+        x: 130
+        y: 979
         width: 109
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -169,12 +171,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 257
-        y: 974
+        y: 979
         width: 228
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -189,13 +192,14 @@ TextureImporter:
       name: Attlat 1_4
       rect:
         serializedVersion: 2
-        x: 513
-        y: 974
+        x: 514
+        y: 979
         width: 167
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -210,13 +214,14 @@ TextureImporter:
       name: Attlat 1_7
       rect:
         serializedVersion: 2
-        x: 705
-        y: 974
+        x: 707
+        y: 979
         width: 114
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -231,13 +236,14 @@ TextureImporter:
       name: Attlat 1_8
       rect:
         serializedVersion: 2
-        x: 898
-        y: 978
+        x: 899
+        y: 983
         width: 119
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -253,12 +259,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6
-        y: 909
+        y: 914
         width: 90
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -274,12 +281,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 910
+        y: 915
         width: 227
         height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -295,12 +303,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 449
-        y: 909
+        y: 914
         width: 199
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -316,12 +325,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 711
-        y: 909
+        y: 915
         width: 114
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -337,12 +347,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 827
+        y: 832
         width: 308
         height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -364,6 +375,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -385,6 +397,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -400,12 +413,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 360
-        y: 367
+        y: 372
         width: 664
         height: 272
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -420,13 +434,14 @@ TextureImporter:
       name: Attlat 1_19
       rect:
         serializedVersion: 2
-        x: 363
-        y: 48
+        x: 364
+        y: 5
         width: 661
         height: 271
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -448,6 +463,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -462,13 +478,14 @@ TextureImporter:
       name: Attlat 1_5
       rect:
         serializedVersion: 2
-        x: 378
-        y: 826
+        x: 379
+        y: 831
         width: 22
         height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -484,12 +501,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 746
+        y: 751
         width: 358
         height: 70
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -505,12 +523,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 657
+        y: 658
         width: 323
         height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -525,13 +544,14 @@ TextureImporter:
       name: Attlat 1_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 562
+        x: 1
+        y: 567
         width: 356
         height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -547,12 +567,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 460
+        y: 465
         width: 338
         height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -567,13 +588,14 @@ TextureImporter:
       name: Attlat 1_21
       rect:
         serializedVersion: 2
-        x: 0
-        y: 340
+        x: 1
+        y: 346
         width: 344
         height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -589,12 +611,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 251
-        width: 383
+        y: 256
+        width: 355
         height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -609,13 +632,14 @@ TextureImporter:
       name: Attlat 1_23
       rect:
         serializedVersion: 2
-        x: 445
-        y: 831
+        x: 444
+        y: 836
         width: 201
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -626,7 +650,52 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Attlat 1_24
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 837
+        width: 135
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052b61428a1a0ad4fb1e1f2add5f1561
+      internalID: 306904806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attlat 1_25
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 915
+        width: 84
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2566744a564107740ad366f066aa358e
+      internalID: -84829663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -636,6 +705,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
       Attlat 1_0: 546032957
       Attlat 1_1: 1491959863
@@ -654,6 +725,8 @@ TextureImporter:
       Attlat 1_21: 52763462
       Attlat 1_22: -1442782612
       Attlat 1_23: 573731327
+      Attlat 1_24: 306904806
+      Attlat 1_25: -84829663
       Attlat 1_3: -649526704
       Attlat 1_4: 2531571
       Attlat 1_5: -512418727
