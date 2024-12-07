@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _scoreText;
     private void Start()
     {
-        EventManager<GameEvent>.SubscribeAction(GameEvent.OnScoreIncrease, (Action) OnScoreIncrease);
+        EventManager.Subscribe(GameEvent.OnScoreIncrease, (Action) OnScoreIncrease);
     }
 
     private void OnScoreIncrease()
@@ -17,6 +17,6 @@ public class UIManager : MonoBehaviour
     }
     private void OnDestroy()
     {
-        EventManager<GameEvent>.UnsubscribeAction(GameEvent.OnScoreIncrease,(Action) OnScoreIncrease);
+        EventManager.Unsubscribe(GameEvent.OnScoreIncrease,(Action) OnScoreIncrease);
     }
 }

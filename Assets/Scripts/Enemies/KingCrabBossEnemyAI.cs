@@ -3,19 +3,27 @@ using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class KingCrabBossEnemyAI : BossEnemyAI
+public class KingCrabBossEnemyAI : EnemyAI
 {
     [SerializeField] private Transform[] polygonPoints;
     private int _normalAttackCount = 0;
     private float _attackAnimLength;
     private WaitForSeconds _animWait;
+    private IState _currentIState;
     protected override void Start()
     {
         _playerTransform = PlayerController.Instance.transform;
         roamPosition = GenerateRandomPointInPolygon();
         _attackAnimLength = GetTimeOfAttackAnim();
         _animWait = new WaitForSeconds(_attackAnimLength);
+        SetState(new RoamingState(this));
+    }
 
+    public void SetState(IState newState)
+    {
+        _currentIState.OnExit();
+        _currentIState = newState;
+        _currentIState.OnEnter();
     }
     public float GetTimeOfAttackAnim()
     {
