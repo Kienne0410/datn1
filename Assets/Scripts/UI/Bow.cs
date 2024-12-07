@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bow : MonoBehaviour, IWeapon
 {
+    [SerializeField] private AudioClip _attackSoundClip;
     [SerializeField] private WeaponInfo weaponInfo;
     [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private Transform arrowSpawnPoint;
@@ -19,9 +20,11 @@ public class Bow : MonoBehaviour, IWeapon
 
     public void Attack()
     {
+        
         myAnimator.SetTrigger(FIRE_HASH);
         GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
         newArrow.GetComponent<Projectile>().UpdateWeaponInfo(weaponInfo);
+        SoundManager.Instance.PlaySoundEffect(_attackSoundClip);
     }
 
     public WeaponInfo GetWeaponInfo()

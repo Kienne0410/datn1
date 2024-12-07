@@ -48,6 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 419c0f579672f4644abe137566389f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _attackSoundClip: {fileID: 8300000, guid: c6e145dfda1aa8943bfd157e3d20d905, type: 3}
   weaponInfo: {fileID: 11400000, guid: 0cdbfee23cc3dfc4ca8cea2b99918a4b, type: 2}
   arrowPrefab: {fileID: 8482323575379879915, guid: 5c028f7d0fe6e8947a74bb84c5dacab6, type: 3}
   arrowSpawnPoint: {fileID: 8335412078041206409}
