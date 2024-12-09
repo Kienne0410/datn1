@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 
 public class GameManager : Singleton<GameManager>
@@ -28,8 +29,30 @@ public class GameManager : Singleton<GameManager>
 
     public void PauseGame(bool status)
     {
+        InputManager.Instance.PauseInputSystem(status);
         isPaused = status;
-        Time.timeScale = status ? 0 : 1;
+        if (!status)
+        {
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            Time.timeScale = 0f;
+        }
+    }
+    public void PauseGameNotPauseUIControl(bool status)
+    {
+        isPaused = status;
+        if (!status)
+        {   
+            InputManager.Instance.playerControls.Enable();
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            InputManager.Instance.playerControls.Disable();
+            Time.timeScale = 0f;
+        }
     }
 
     private void OnScoreIncrease()

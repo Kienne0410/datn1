@@ -10,7 +10,7 @@ public class UIKeyTouch : MonoBehaviour
 
     private void Awake()
     {
-        _uiControls = new UIControls();
+        _uiControls = InputManager.Instance.uiControls;
     }
 
     private void OnEnable()
@@ -31,7 +31,7 @@ public class UIKeyTouch : MonoBehaviour
 
     public void DisplayOnTab()
     {
-        GameManager.Instance.PauseGame(!OnTab.activeSelf);
+        GameManager.Instance.PauseGameNotPauseUIControl(!OnTab.activeSelf);
         OnTab.SetActive(!OnTab.activeSelf);
     }
 

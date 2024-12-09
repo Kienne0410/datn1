@@ -31,7 +31,7 @@ public class ExplosionSkill : MonoBehaviour
 
     private void Awake()
     {
-        _playerControls = new PlayerControls();
+        _playerControls = InputManager.Instance.playerControls; 
     }
 
     private void OnEnable()

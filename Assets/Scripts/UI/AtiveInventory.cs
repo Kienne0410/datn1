@@ -10,7 +10,7 @@ public class ActiveInventory : MonoBehaviour
     private PlayerControls playerControls;
 
     private void Awake() {
-        playerControls = new PlayerControls();
+        playerControls = InputManager.Instance.playerControls;
     }
 
     private void Start() {
