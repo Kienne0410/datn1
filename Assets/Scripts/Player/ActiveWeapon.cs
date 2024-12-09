@@ -13,12 +13,11 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     protected override void Awake() {
         base.Awake();
-
+        playerControls = InputManager.Instance.playerControls;
     }
 
     private void OnEnable()
     {
-        playerControls = InputManager.Instance.playerControls;
         playerControls.Enable();
     }
     private void OnDisable()

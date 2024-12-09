@@ -31,12 +31,11 @@ public class ExplosionSkill : MonoBehaviour
 
     private void Awake()
     {
-        
+        _playerControls = InputManager.Instance.playerControls; 
     }
 
     private void OnEnable()
     {
-        _playerControls = InputManager.Instance.playerControls; 
         _playerControls.Enable();
     }
 

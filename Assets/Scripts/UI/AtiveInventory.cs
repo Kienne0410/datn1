@@ -10,15 +10,15 @@ public class ActiveInventory : MonoBehaviour
     private PlayerControls playerControls;
 
     private void Awake() {
+        playerControls = InputManager.Instance.playerControls;
+        playerControls.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
     }
 
     private void Start() {
-        playerControls.Inventory.Keyboard.performed += ctx => ToggleActiveSlot((int)ctx.ReadValue<float>());
         ToggleActiveHighlight(0);
     }
 
     private void OnEnable() {
-        playerControls = InputManager.Instance.playerControls;
         playerControls.Enable();
     }
 
