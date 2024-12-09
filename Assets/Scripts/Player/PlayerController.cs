@@ -27,7 +27,6 @@ public class PlayerController : Singleton<PlayerController>
     protected override void Awake() {
         base.Awake();
 
-        playerControls = InputManager.Instance.playerControls;
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
@@ -36,7 +35,6 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Start() {
         playerControls.Combat.Dash.performed += _ => Dash();
-
         startingMoveSpeed = moveSpeed;
     }
 
@@ -56,6 +54,7 @@ public class PlayerController : Singleton<PlayerController>
         return null;
     }
     private void OnEnable() {
+        playerControls = InputManager.Instance.playerControls;
         playerControls.Enable();
     }
 

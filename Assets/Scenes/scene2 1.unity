@@ -43281,6 +43281,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a6375794f4ad64d84620d2a4be5dc5, type: 3}
+--- !u!1 &924437417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 924437418}
+  - component: {fileID: 924437419}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &924437418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924437417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262681261}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &924437419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924437417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21d1804c39ec114ca5f31edf6934f6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialSteps:
+  - instructionText: Welcome
+    uiElement: {fileID: 686595781}
+    completionQuest: 0
+  - instructionText: How to Move
+    uiElement: {fileID: 1976533801}
+    completionQuest: 1
+  - instructionText: How to use Dash
+    uiElement: {fileID: 31282817}
+    completionQuest: 2
+  - instructionText: How to Attack
+    uiElement: {fileID: 1788880385}
+    completionQuest: 3
+  - instructionText: How to use Skill
+    uiElement: {fileID: 1617800243}
+    completionQuest: 4
+  - instructionText: Cooldown Of Skill
+    uiElement: {fileID: 1807905654}
+    completionQuest: 5
+  - instructionText: "S\u1EB5n s\xE0ng \u0111\u1EC3 \u0103n h\xE0nh r\u1ED3i"
+    uiElement: {fileID: 1315431098}
+    completionQuest: 6
+  _tutorialPanel: {fileID: 1904609813}
+  _tutorialStepsPanelButton: {fileID: 1841894828}
 --- !u!1 &937345241
 GameObject:
   m_ObjectHideFlags: 0
@@ -45158,6 +45226,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1916514701051616409, guid: 60a6375794f4ad64d84620d2a4be5dc5, type: 3}
   m_PrefabInstance: {fileID: 156315171}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1164061835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1164061836}
+  - component: {fileID: 1164061837}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1164061836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164061835}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1262681261}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1164061837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164061835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6366c9dd2eba2b4449d7e41a8b2c499a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197652084
 GameObject:
   m_ObjectHideFlags: 0
@@ -71306,10 +71418,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1164061836}
   - {fileID: 1723731313}
   - {fileID: 2024568771}
   - {fileID: 160205462}
   - {fileID: 586571790}
+  - {fileID: 924437418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1284119361
@@ -73926,6 +74040,10 @@ PrefabInstance:
     - target: {fileID: 2306737947107475419, guid: 17a12299b7e3f244384ba7a02c247a94, type: 3}
       propertyPath: m_Name
       value: Big Stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 2306737947107475419, guid: 17a12299b7e3f244384ba7a02c247a94, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2955794805323311200, guid: 17a12299b7e3f244384ba7a02c247a94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -78227,7 +78345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b64ce07d4d8a1439aeaf5216b6aad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputActionAsset: {fileID: -944628639613478452, guid: 3eba38362a62ea747904ee43c76e948f, type: 3}
   score: 0
 --- !u!1 &1749629136
 GameObject:
@@ -79424,7 +79541,6 @@ GameObject:
   - component: {fileID: 1922386192}
   - component: {fileID: 1922386191}
   - component: {fileID: 1922386190}
-  - component: {fileID: 1922386195}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -79555,42 +79671,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1922386195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922386188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c21d1804c39ec114ca5f31edf6934f6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tutorialSteps:
-  - instructionText: Welcome
-    uiElement: {fileID: 686595781}
-    completionQuest: 0
-  - instructionText: How to Move
-    uiElement: {fileID: 1976533801}
-    completionQuest: 1
-  - instructionText: How to use Dash
-    uiElement: {fileID: 31282817}
-    completionQuest: 2
-  - instructionText: How to Attack
-    uiElement: {fileID: 1788880385}
-    completionQuest: 3
-  - instructionText: How to use Skill
-    uiElement: {fileID: 1617800243}
-    completionQuest: 4
-  - instructionText: Cooldown Of Skill
-    uiElement: {fileID: 1807905654}
-    completionQuest: 5
-  - instructionText: "S\u1EB5n s\xE0ng \u0111\u1EC3 \u0103n h\xE0nh r\u1ED3i"
-    uiElement: {fileID: 1315431098}
-    completionQuest: 6
-  _tutorialPanel: {fileID: 1904609813}
-  _tutorialStepsPanelButton: {fileID: 1841894828}
 --- !u!1001 &1943697939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88694,7 +88774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3854382204949642199, guid: 0583df99515b867449063078905eb6fd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4093666596693150326, guid: 0583df99515b867449063078905eb6fd, type: 3}
       propertyPath: m_IsActive
@@ -88702,7 +88782,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437952972754590519, guid: 0583df99515b867449063078905eb6fd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7163267035559284444, guid: 0583df99515b867449063078905eb6fd, type: 3}
       propertyPath: m_Name

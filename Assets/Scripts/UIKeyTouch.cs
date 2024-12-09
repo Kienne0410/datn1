@@ -8,14 +8,9 @@ public class UIKeyTouch : MonoBehaviour
     [SerializeField] private GameObject OnTab;
     private UIControls _uiControls;
 
-    private void Awake()
-    {
-        _uiControls = InputManager.Instance.uiControls;
-    }
-
     private void OnEnable()
     {
-        _uiControls.Enable();
+        _uiControls = InputManager.Instance.uiControls;
     }
 
     private void OnDisable()
@@ -24,7 +19,6 @@ public class UIKeyTouch : MonoBehaviour
     }
 
     void Start()
-
     {
         _uiControls.UI.OnTab.performed += _ => DisplayOnTab();
     }

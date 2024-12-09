@@ -14,12 +14,11 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     protected override void Awake() {
         base.Awake();
 
-        playerControls = InputManager.Instance.playerControls;
     }
 
     private void OnEnable()
     {
-        playerControls.Enable();
+        playerControls = InputManager.Instance.playerControls;
     }
     private void OnDisable()
     {
@@ -30,7 +29,6 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     {
         playerControls.Combat.Attack.started += _ => StartAttacking();
         playerControls.Combat.Attack.canceled += _ => StopAttacking();
-
         AttackCooldown();
     }
 
