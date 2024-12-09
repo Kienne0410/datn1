@@ -19,6 +19,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     private void OnEnable()
     {
         playerControls = InputManager.Instance.playerControls;
+        playerControls.Enable();
     }
     private void OnDisable()
     {

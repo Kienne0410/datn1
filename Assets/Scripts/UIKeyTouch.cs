@@ -11,6 +11,7 @@ public class UIKeyTouch : MonoBehaviour
     private void OnEnable()
     {
         _uiControls = InputManager.Instance.uiControls;
+        _uiControls.Enable();
     }
 
     private void OnDisable()
