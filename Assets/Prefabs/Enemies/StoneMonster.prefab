@@ -175,7 +175,7 @@ MonoBehaviour:
   _speedRoaming: 2
   _speedChasing: 4
   _speedAttacking: 5
-  _attackRange: 5
+  _attackRange: 6
   _fieldOfViewToChase: 10
   _attackCooldown: 2
   _enemyType: {fileID: 7788178689764948568}
@@ -206,7 +206,7 @@ Animator:
   m_GameObject: {fileID: 4393830074857016185}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 914538d5a69b10d4a9d311eed983d965, type: 2}
+  m_Controller: {fileID: 9100000, guid: e2fcc7441c1f41849a8150ca8d31e3c5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
