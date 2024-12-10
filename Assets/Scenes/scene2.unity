@@ -11145,6 +11145,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60a6375794f4ad64d84620d2a4be5dc5, type: 3}
+--- !u!1001 &485850831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393830074857016185, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_Name
+      value: StoneMonster (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
 --- !u!224 &488141893 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1451369874583694873, guid: f003bd5b05699a44e961f834f995c6b9, type: 3}
@@ -26508,6 +26565,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &705112335
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393830074857016185, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_Name
+      value: StoneMonster (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
 --- !u!1 &706763756
 GameObject:
   m_ObjectHideFlags: 0
@@ -27379,6 +27493,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &797037109
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393830074857016185, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_Name
+      value: StoneMonster
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
 --- !u!1 &821243895
 GameObject:
   m_ObjectHideFlags: 0
@@ -88709,6 +88880,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1549095706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658339256290345841, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4393830074857016185, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
+      propertyPath: m_Name
+      value: StoneMonster (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84a70afbe545a874492b0b5518db74f7, type: 3}
 --- !u!1001 &1552956215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89848,6 +90076,7 @@ MonoBehaviour:
   _dontDestroyOnload: 0
   backgroundMusicSource: {fileID: 1633706167}
   soundEffectSource: {fileID: 1633706166}
+  defaultBackgroundMusic: {fileID: 0}
   musicVolume: 0.538
   sfxVolume: 0.807
 --- !u!4 &1633706169
@@ -129555,3 +129784,7 @@ SceneRoots:
   - {fileID: 4904203472130890464}
   - {fileID: 1552956215}
   - {fileID: 730531780}
+  - {fileID: 797037109}
+  - {fileID: 705112335}
+  - {fileID: 485850831}
+  - {fileID: 1549095706}
