@@ -1,9 +1,16 @@
+using NaughtyAttributes;
+using ToolBox.Serialization;
 using UnityEngine;
 
 public class InputManager : Singleton<InputManager>
 {
     public PlayerControls playerControls;
     public UIControls uiControls;
+    [Button]
+    public void DeleteAllSave()
+    {
+        DataSerializer.DeleteAll();
+    }
 
     protected override void Awake()
     {

@@ -87,9 +87,4 @@ public class C_LMenu : MonoBehaviour
         _backButtonOptionPanel.onClick.RemoveAllListeners();
         _backButtonLoadGamePanel.onClick.RemoveAllListeners();
     }
-
-    public void DeleteAllSave()
-    {
-        DataSerializer.DeleteAll();
-    }
 }
