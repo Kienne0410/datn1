@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2007e1ceb98a4674284705f5b0d26fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
 --- !u!114 &2663242217736859240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd62aec632ff38d44938a9ce723abb94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
   moveSpeed: 7
   dashSpeed: 4
   myTrailRenderer: {fileID: 6360987821800469134}
@@ -294,8 +296,8 @@ MonoBehaviour:
   explosionCount: 20
   delayBetweenExplosions: 0.02
   warningTime: 1.3
-  damage: 10
-  cooldownTime: 3
+  damage: 0
+  cooldownTime: 5
   explosionSizeRange: {x: 0.7, y: 1.7}
   cooldownOverlay: {fileID: 0}
   skillButton: {fileID: 0}

@@ -56382,7 +56382,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1739363627
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -88699,9 +88699,29 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.6792453
       objectReference: {fileID: 0}
+    - target: {fileID: 2830161287781695782, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342608803613189462, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: m_Color.b
+      value: 0.41037738
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342608803613189462, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8586053
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342608803613189462, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3342608803613189462, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: m_Intensity
-      value: 3
+      value: 3.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 3342608803613189462, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: 'm_ApplyToSortingLayers.Array.data[0]'
+      value: -598727309
       objectReference: {fileID: 0}
     - target: {fileID: 5228499151084574551, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: m_Intensity
