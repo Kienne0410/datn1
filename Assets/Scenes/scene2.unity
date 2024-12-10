@@ -1695,7 +1695,7 @@ PrefabInstance:
     - target: {fileID: 5165813661316228777, guid: f003bd5b05699a44e961f834f995c6b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 518963987}
     - target: {fileID: 5165813661316228777, guid: f003bd5b05699a44e961f834f995c6b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1723,7 +1723,7 @@ PrefabInstance:
     - target: {fileID: 7040699327160622118, guid: f003bd5b05699a44e961f834f995c6b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 518963987}
     - target: {fileID: 7040699327160622118, guid: f003bd5b05699a44e961f834f995c6b9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -6023,7 +6023,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1739363627
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -11580,6 +11580,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5283959581300895502, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: OnTab
+      value: 
+      objectReference: {fileID: 1355320008}
     - target: {fileID: 5323265419152230744, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: _endGame
       value: 
@@ -11645,6 +11649,17 @@ PrefabInstance:
       addedObject: {fileID: 1453760385}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+--- !u!114 &518963987 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5283959581300895502, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+  m_PrefabInstance: {fileID: 518963986}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6a6ed786ad20f4fb3fa983c92760a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &528835077
 GameObject:
   m_ObjectHideFlags: 0
@@ -39694,6 +39709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dontDestroyOnload: 0
   score: 0
+  playerHealth: 10
+  currentHealth: 0
 --- !u!1 &1034433141
 GameObject:
   m_ObjectHideFlags: 0
