@@ -3,10 +3,11 @@ using UnityEditor.Overlays;
 using UnityEngine;
 public class SoundManager : Singleton<SoundManager>
 {
-
+    
     [Header("Audio Sources")]
     [SerializeField] private AudioSource backgroundMusicSource; // Nhạc nền
-    [SerializeField] private AudioSource soundEffectSource;     // Hiệu ứng âm thanh
+    [SerializeField] private AudioSource soundEffectSource; // Hiệu ứng âm thanh
+    public AudioClip defaultBackgroundMusic;
 
     [Header("Settings")]
     [Range(0f, 1f)] public float musicVolume = 0.75f;              // Âm lượng nhạc nền

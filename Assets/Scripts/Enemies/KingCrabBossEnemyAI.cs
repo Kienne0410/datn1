@@ -20,6 +20,11 @@ public class KingCrabBossEnemyAI : EnemyAI
         SetState(new RoamingState(this));
     }
 
+    protected void OnDestroy()
+    {
+        SoundManager.Instance.PlayBackgroundMusic(SoundManager.Instance.defaultBackgroundMusic);
+    }
+
     public void SetState(IState newState)
     {
         _currentIState.OnExit();
