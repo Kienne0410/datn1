@@ -10,6 +10,7 @@ public class KingCrabBossEnemyAI : EnemyAI
     private float _attackAnimLength;
     private WaitForSeconds _animWait;
     private IState _currentIState;
+    [SerializeField] private AudioClip _bossFightClip;
     protected override void Start()
     {
         _playerTransform = PlayerController.Instance.transform;
@@ -49,6 +50,7 @@ public class KingCrabBossEnemyAI : EnemyAI
                 Roaming();
                 if (IsPointInPolygon(_playerTransform.position))
                 {
+                    SoundManager.Instance.PlayBackgroundMusic(_bossFightClip);
                     _currentState = State.Chase;
                     _animator.SetTrigger("Chase");
                 }
