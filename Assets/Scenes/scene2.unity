@@ -427,7 +427,6 @@ Transform:
   - {fileID: 1595621574}
   - {fileID: 1029923585}
   - {fileID: 1633706169}
-  - {fileID: 461275341}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &28445184
@@ -11034,50 +11033,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &461275339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 461275341}
-  - component: {fileID: 461275340}
-  m_Layer: 0
-  m_Name: InputManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &461275340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461275339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6366c9dd2eba2b4449d7e41a8b2c499a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &461275341
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461275339}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 24940676}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &473441531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6931111794032091688, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
@@ -27254,6 +27209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d3df802467c6243b1688b2bea2a98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
   _healthBarSlider: {fileID: 174527753}
   _healthBarText: {fileID: 919954796}
 --- !u!114 &821243898
@@ -27268,6 +27224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e242b6a43cb098a4ca5e65731de1dde4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
   fadeScreen: {fileID: 151718344}
   fadeSpeed: 0.5
 --- !u!114 &821243899
@@ -39533,6 +39490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36b64ce07d4d8a1439aeaf5216b6aad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
   score: 0
 --- !u!1 &1034433141
 GameObject:
@@ -88540,6 +88498,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 174921536916744014, guid: eafb306678bb7cb46937e4bf78b00d4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 174921536916744014, guid: eafb306678bb7cb46937e4bf78b00d4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3518141486629200308, guid: eafb306678bb7cb46937e4bf78b00d4e, type: 3}
       propertyPath: sceneToLoad
       value: Scene1
@@ -88562,7 +88528,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5947584508066384855, guid: eafb306678bb7cb46937e4bf78b00d4e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.04
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 5947584508066384855, guid: eafb306678bb7cb46937e4bf78b00d4e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -89077,6 +89043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a5cb58704e8cd644bfb3b9d8600299c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
 --- !u!1 &1602649752
 GameObject:
   m_ObjectHideFlags: 0
@@ -89122,6 +89089,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d5c00044596d14aa2a206c6e42cf31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
 --- !u!114 &1602649755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89134,6 +89102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1d5c00044596d14aa2a206c6e42cf31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
 --- !u!1 &1610433757
 GameObject:
   m_ObjectHideFlags: 0
@@ -89657,6 +89626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 576275eeb684f5546b693021fae940ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dontDestroyOnload: 0
   backgroundMusicSource: {fileID: 1633706167}
   soundEffectSource: {fileID: 1633706166}
   musicVolume: 0.538

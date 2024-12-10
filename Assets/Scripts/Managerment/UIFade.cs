@@ -21,12 +21,12 @@ public class UIFade : Singleton<UIFade>
 
     public void FadeToClear() {
         if (fadeRoutine != null)
-            {
-                StopCoroutine(fadeRoutine);
-            }
+        {
+            StopCoroutine(fadeRoutine);
+        }
 
-            fadeRoutine = FadeRoutine(0);
-            StartCoroutine(fadeRoutine);
+        fadeRoutine = FadeRoutine(0);
+        StartCoroutine(fadeRoutine);
     }
 
     public IEnumerator FadeRoutine(float targetAlpha) {

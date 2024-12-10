@@ -11,10 +11,6 @@ public class TutorialManager : Singleton<TutorialManager>
     private int _currentStepIndex = 0; // Bước hiện tại
     [SerializeField] private GameObject _tutorialPanel;
     [SerializeField] private Button _tutorialStepsPanelButton;
-    public int GetCurrentStepIndex()
-    {
-        return _currentStepIndex;
-    }
     protected override void Awake()
     {
         base.Awake();
@@ -33,16 +29,20 @@ public class TutorialManager : Singleton<TutorialManager>
 
     private IEnumerator StartTutorialSteps()
     {
-        yield return new WaitUntil(() => _tutorialPanel.activeSelf == false);
-        yield return TutorialStep.Step(tutorialSteps[_currentStepIndex].completionQuest);
-        yield return new WaitUntil(() => tutorialSteps[_currentStepIndex].QuestIsPassed());
-        _currentStepIndex++;
-        ShowCurrentStep();
-        StartCoroutine(nameof(StartTutorialSteps));
+        while (_currentStepIndex < tutorialSteps.Length)
+        {
+            ShowCurrentStep();
+            yield return new WaitUntil(() => _tutorialPanel.activeSelf == false);
+            yield return TutorialStep.Step(tutorialSteps[_currentStepIndex].completionQuest);
+            yield return new WaitUntil(() => tutorialSteps[_currentStepIndex].QuestIsPassed());
+            _currentStepIndex++;
+        }
+        Debug.Log("Tutorial Completed!");
+        DataSerializer.Save(SaveKey.PassTutorial, true);
+        StartCoroutine(FadeToLoadNextScene());
     }
     void Start()
     {
-        ShowCurrentStep();
         StartCoroutine(nameof(StartTutorialSteps));
     }
 
@@ -55,23 +55,16 @@ public class TutorialManager : Singleton<TutorialManager>
     }
     void ShowCurrentStep()
     {
-
-        // Hiển thị UI của bước hiện tại
-        if (_currentStepIndex < tutorialSteps.Length)
-        {
-            GameManager.Instance.PauseGame(true);
-            _tutorialPanel.SetActive(true);
-            tutorialSteps[_currentStepIndex].uiElement.SetActive(true);
-        }
-        else
-        {
-            StopCoroutine(nameof(StartTutorialSteps));
-            Debug.Log("Tutorial Completed!");
-            DataSerializer.Save(SaveKey.PassTutorial, true);
-            SceneManager.LoadScene("scene1");
-        }
+        GameManager.Instance.PauseGame(true);
+        _tutorialPanel.SetActive(true);
+        tutorialSteps[_currentStepIndex].uiElement.SetActive(true);
     }
 
+    private IEnumerator FadeToLoadNextScene()
+    {
+        yield return UIFade.Instance.FadeRoutine(1);
+        SceneManager.LoadScene("scene1");
+    }
     public void CompleteCurrentStep(TutorialQuest condition)
     {
         // Kiểm tra điều kiện hoàn thành

@@ -105,9 +105,10 @@ public class TutorialStep
         yield return waitTwoSeconds;
         TutorialManager.Instance.CompleteCurrentStep(TutorialQuest.Quest6);
     }
+
     private static IEnumerator Quest7()
     {
-        yield return waitTwoSeconds;
+        yield return new WaitForSeconds(1f);
         TutorialManager.Instance.CompleteCurrentStep(TutorialQuest.Quest7);
     }
 }
