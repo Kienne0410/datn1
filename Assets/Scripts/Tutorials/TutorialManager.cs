@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using ToolBox.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -66,6 +67,7 @@ public class TutorialManager : Singleton<TutorialManager>
         {
             StopCoroutine(nameof(StartTutorialSteps));
             Debug.Log("Tutorial Completed!");
+            DataSerializer.Save(SaveKey.PassTutorial, true);
             SceneManager.LoadScene("scene1");
         }
     }
