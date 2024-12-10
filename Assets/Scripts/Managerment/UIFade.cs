@@ -29,7 +29,7 @@ public class UIFade : Singleton<UIFade>
             StartCoroutine(fadeRoutine);
     }
 
-    private IEnumerator FadeRoutine(float targetAlpha) {
+    public IEnumerator FadeRoutine(float targetAlpha) {
         while (!Mathf.Approximately(fadeScreen.color.a, targetAlpha))
         {
             float alpha = Mathf.MoveTowards(fadeScreen.color.a, targetAlpha, fadeSpeed * Time.deltaTime);

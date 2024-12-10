@@ -17,10 +17,10 @@ public class PlayerHealth : MonoBehaviour
     private void Awake() {
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
-        _endGame.SetActive(false);
     }
 
     private void Start() {
+        _endGame.SetActive(false);
         currentHealth = maxHealth;
         HealthBar.Instance.SetHeathBarText($"{currentHealth}/{maxHealth}");
         HealthBar.Instance.SetSliderHealthBarValue(1);

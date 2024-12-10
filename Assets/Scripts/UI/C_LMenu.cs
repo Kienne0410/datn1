@@ -23,6 +23,12 @@ public class C_LMenu : MonoBehaviour
     // Start is called before the first frame update
     private void PlayNewGameLoadScene()
     {
+        StartCoroutine(PlayGame());
+    }
+
+    private IEnumerator PlayGame()
+    {
+        yield return UIFade.Instance.FadeRoutine(1);
         if (DataSerializer.Load<bool>(SaveKey.PassTutorial))
         {
             SceneManager.LoadScene("scene1");
