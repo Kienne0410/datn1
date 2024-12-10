@@ -32,11 +32,13 @@ public class UIKeyTouch : MonoBehaviour
 
     public void LoadMenu()
     {
+        GameManager.Instance.currentHealth = GameManager.Instance.playerHealth;
         SceneManager.LoadScene("Menu");
     }
 
     public void ReStart()
     {
+        GameManager.Instance.currentHealth = GameManager.Instance.playerHealth;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
