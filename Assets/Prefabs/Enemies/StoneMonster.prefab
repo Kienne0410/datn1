@@ -175,7 +175,7 @@ MonoBehaviour:
   _speedRoaming: 2
   _speedChasing: 4
   _speedAttacking: 5
-  _attackRange: 6
+  _attackRange: 5
   _fieldOfViewToChase: 10
   _attackCooldown: 2
   _enemyType: {fileID: 7788178689764948568}
