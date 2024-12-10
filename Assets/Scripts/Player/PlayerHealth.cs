@@ -5,15 +5,14 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private int maxHealth = 3;
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
     [SerializeField] private GameObject _endGame;
-    private int currentHealth;
     private bool canTakeDamage = true;
+    private int currentHealth;
     private Knockback knockback;
     private Flash flash;
-
+    
     private void Awake() {
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
@@ -21,8 +20,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start() {
         _endGame.SetActive(false);
-        currentHealth = maxHealth;
-        HealthBar.Instance.SetHeathBarText($"{currentHealth}/{maxHealth}");
+        HealthBar.Instance.SetHeathBarText($"{GameManager.Instance.currentHealth}/{GameManager.Instance.playerHealth}");
         HealthBar.Instance.SetSliderHealthBarValue(1);
         
     }
@@ -41,11 +39,11 @@ public class PlayerHealth : MonoBehaviour
         knockback.GetKnockedBack(hitTransform, knockBackThrustAmount);
         StartCoroutine(flash.FlashRoutine());
         canTakeDamage = false;
-        currentHealth -= damageAmount;
-        HealthBar.Instance.SetHeathBarText($"{currentHealth}/{maxHealth}");
-        float ratio = (float) currentHealth / maxHealth;
+        GameManager.Instance.currentHealth -= damageAmount;
+        HealthBar.Instance.SetHeathBarText($"{GameManager.Instance.currentHealth}/{GameManager.Instance.playerHealth}");
+        float ratio = (float) GameManager.Instance.currentHealth / GameManager.Instance.playerHealth;
         HealthBar.Instance.SetSliderHealthBarValue(ratio);
-        if (currentHealth <= 0)
+        if (GameManager.Instance.currentHealth <= 0)
         {
             StartCoroutine(EndGame());
             return;

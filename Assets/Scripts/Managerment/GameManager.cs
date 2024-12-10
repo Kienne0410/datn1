@@ -7,8 +7,11 @@ public class GameManager : Singleton<GameManager>
 {
     private bool isPaused = false;
     public int score = 0;
+    public int playerHealth = 10;
+    public int currentHealth;
     protected override void Awake()
     {
+        currentHealth = playerHealth;
         base.Awake();
         DontDestroyOnLoad(this.gameObject);
         EventManager.Subscribe(GameEvent.OnScoreIncrease, (Action)OnScoreIncrease);

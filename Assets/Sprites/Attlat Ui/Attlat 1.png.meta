@@ -659,7 +659,7 @@ TextureImporter:
         width: 135
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -681,7 +681,7 @@ TextureImporter:
         width: 84
         height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -690,6 +690,28 @@ TextureImporter:
       bones: []
       spriteID: 2566744a564107740ad366f066aa358e
       internalID: -84829663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attlat 1_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 169
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c86b90e69ff204e8183be048195789
+      internalID: 1268601806
       vertices: []
       indices: 
       edges: []
@@ -727,6 +749,7 @@ TextureImporter:
       Attlat 1_23: 573731327
       Attlat 1_24: 306904806
       Attlat 1_25: -84829663
+      Attlat 1_26: 1268601806
       Attlat 1_3: -649526704
       Attlat 1_4: 2531571
       Attlat 1_5: -512418727

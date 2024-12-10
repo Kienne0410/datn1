@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ActiveWeapon : Singleton<ActiveWeapon>
 {
@@ -8,12 +10,17 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
 
     private PlayerControls playerControls;
     private float timeBetweenAttacks;
-
+    private Action<InputAction.CallbackContext> _StartAttacking;
+    private Action<InputAction.CallbackContext> _StopAttacking;
     private bool attackButtonDown, isAttacking = false;
 
     protected override void Awake() {
         base.Awake();
         playerControls = InputManager.Instance.playerControls;
+        _StartAttacking = _ => StartAttacking();
+        _StopAttacking = _ => StopAttacking();
+        playerControls.Combat.Attack.started += _StartAttacking;
+        playerControls.Combat.Attack.canceled += _StopAttacking;
     }
 
     private void OnEnable()
@@ -25,10 +32,14 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         playerControls.Disable();
     }
 
+    private void OnDestroy()
+    {
+        playerControls.Combat.Attack.started -= _StartAttacking;
+        playerControls.Combat.Attack.canceled -= _StopAttacking;
+    }
     private void Start()
     {
-        playerControls.Combat.Attack.started += _ => StartAttacking();
-        playerControls.Combat.Attack.canceled += _ => StopAttacking();
+        
         AttackCooldown();
     }
 
