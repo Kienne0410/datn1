@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : Singleton<PlayerController>
 {
@@ -23,6 +24,8 @@ public class PlayerController : Singleton<PlayerController>
 
     private bool facingLeft = false;
     private bool isDashing = false;
+    
+    private Action<InputAction.CallbackContext> dashAction;
 
     protected override void Awake() {
         base.Awake();
@@ -31,10 +34,8 @@ public class PlayerController : Singleton<PlayerController>
         myAnimator = GetComponent<Animator>();
         mySpriteRender = GetComponent<SpriteRenderer>();
         knockback = GetComponent<Knockback>();
-    }
-
-    private void Start() {
-        playerControls.Combat.Dash.performed += _ => Dash();
+        dashAction = _ => Dash();
+        playerControls.Combat.Dash.performed += dashAction;
         startingMoveSpeed = moveSpeed;
     }
 
@@ -60,6 +61,11 @@ public class PlayerController : Singleton<PlayerController>
     private void OnDisable()
     {
         playerControls.Disable();
+    }
+
+    private void OnDestroy()
+    {
+        playerControls.Combat.Dash.performed -= dashAction;
     }
 
     private void Update() {

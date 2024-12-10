@@ -28,10 +28,13 @@ public class ExplosionSkill : MonoBehaviour
     private bool isCooldown = false; // Trạng thái hồi chiêu
     private float currentCooldownTime = 0f; // Thời gian còn lại của hồi chiêu
     private PlayerControls _playerControls;
+    private Action<InputAction.CallbackContext> activeSkillAction;
 
     private void Awake()
     {
         _playerControls = InputManager.Instance.playerControls; 
+        activeSkillAction = _ => OnActivateSkill();
+        _playerControls.Combat.ActivateSkill.performed += activeSkillAction;
     }
 
     private void OnEnable()
@@ -43,10 +46,8 @@ public class ExplosionSkill : MonoBehaviour
     {
         _playerControls.Disable();
     }
-    
     private void Start()
     {
-        _playerControls.Combat.ActivateSkill.performed += _ => OnActivateSkill();
         // Lấy AudioSource từ đối tượng
         audioSource = GetComponent<AudioSource>();
         
@@ -61,6 +62,11 @@ public class ExplosionSkill : MonoBehaviour
         {
             skillButton.interactable = true; // Bật nút kỹ năng
         }
+    }
+
+    private void OnDestroy()
+    {
+        _playerControls.Combat.ActivateSkill.performed -= activeSkillAction;
     }
 
     public void OnActivateSkill()
@@ -148,7 +154,7 @@ public class ExplosionSkill : MonoBehaviour
         Destroy(warning);
         Destroy(explosion, 2f);
     }
-
+    
     private IEnumerator Cooldown()
     {
         float elapsed = 0f;
