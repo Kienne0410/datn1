@@ -29,7 +29,7 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     }
     private void OnDisable()
     {
-        playerControls.Disable();
+        playerControls?.Disable();
     }
 
     private void OnDestroy()

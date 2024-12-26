@@ -3,17 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class PlayerController : Singleton<PlayerController>
 {
     public bool FacingLeft { get { return facingLeft; } }
     
-
+    [SerializeField] private CharacterDefaultStatsData characterDefaultStatsData; 
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
     [SerializeField] private Transform weaponCollider;
-    
+    public int _currentLevel { get; set; } = 1;
+    public int _currentExp { get; set; } = 0; 
+    public float _currentHealth { get; set; }
+    public CharacterDefaultStats _defaultStats { get; set; }
+    public CharacterOtherStats _otherStats { get; set; } = new CharacterOtherStats();
     private PlayerControls playerControls;
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -37,6 +42,19 @@ public class PlayerController : Singleton<PlayerController>
         dashAction = _ => Dash();
         playerControls.Combat.Dash.performed += dashAction;
         startingMoveSpeed = moveSpeed;
+        InitStats();
+    }
+
+    public void InitStats()
+    {
+        _defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
+        _currentHealth = _defaultStats.maxHealth;
+    }
+
+    public void LevelUp()
+    {
+        _currentLevel++;
+        _defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
     }
 
     public float GetTimeOfDieAnim()
@@ -60,7 +78,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void OnDisable()
     {
-        playerControls.Disable();
+        playerControls?.Disable();
     }
 
     private void OnDestroy()

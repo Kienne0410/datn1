@@ -18,11 +18,9 @@ public class PlayerHealth : MonoBehaviour
         knockback = GetComponent<Knockback>();
     }
 
-    private void Start() {
+    private void Start()
+    {
         _endGame.SetActive(false);
-        HealthBar.Instance.SetHeathBarText($"{GameManager.Instance.currentHealth}/{GameManager.Instance.playerHealth}");
-        HealthBar.Instance.SetSliderHealthBarValue(1);
-        
     }
 
     private void OnCollisionStay2D(Collision2D other) {
@@ -39,11 +37,9 @@ public class PlayerHealth : MonoBehaviour
         knockback.GetKnockedBack(hitTransform, knockBackThrustAmount);
         StartCoroutine(flash.FlashRoutine());
         canTakeDamage = false;
-        GameManager.Instance.currentHealth -= damageAmount;
-        HealthBar.Instance.SetHeathBarText($"{GameManager.Instance.currentHealth}/{GameManager.Instance.playerHealth}");
-        float ratio = (float) GameManager.Instance.currentHealth / GameManager.Instance.playerHealth;
-        HealthBar.Instance.SetSliderHealthBarValue(ratio);
-        if (GameManager.Instance.currentHealth <= 0)
+        PlayerController.Instance._currentHealth -= damageAmount;
+        EventManager.Raise(UIEvent.OnUpdateHealthBar);
+        if (PlayerController.Instance._currentHealth <= 0)
         {
             StartCoroutine(EndGame());
             return;

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba419b10175a4d439adae5a182eaa3b, type: 3}
+  m_Name: Gunner
+  m_EditorClassIdentifier: 
+  characterType: 0
+  characterStats:
+  - maxHealth: 10
+    EXPtoNextLevel: 100
+    attackSpeed: 0
+    moveSpeed: 0
+    regenSpeed: 0
+    damageBonusPercent: 0
+    armor: 0
+  - maxHealth: 12
+    EXPtoNextLevel: 0
+    attackSpeed: 0
+    moveSpeed: 0
+    regenSpeed: 0
+    damageBonusPercent: 0
+    armor: 0
+  - maxHealth: 0
+    EXPtoNextLevel: 0
+    attackSpeed: 0
+    moveSpeed: 0
+    regenSpeed: 0
+    damageBonusPercent: 0
+    armor: 0
+  - maxHealth: 0
+    EXPtoNextLevel: 0
+    attackSpeed: 0
+    moveSpeed: 0
+    regenSpeed: 0
+    damageBonusPercent: 0
+    armor: 0
