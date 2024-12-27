@@ -20,7 +20,7 @@ public class Sword : MonoBehaviour, IWeapon
 
     private void Start() {
         weaponCollider = PlayerController.Instance.GetWeaponCollider();
-        slashAnimSpawnPoint = GameObject.Find("SlashSpawnPoint").transform;
+        slashAnimSpawnPoint = PlayerController.Instance.GetSlashSpawnPoint();
     }
 
     private void Update() {

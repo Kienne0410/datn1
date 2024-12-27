@@ -9,11 +9,11 @@ public class PlayerController : Singleton<PlayerController>
 {
     public bool FacingLeft { get { return facingLeft; } }
     
+    [SerializeField] private SpriteRenderer _playerSpriteRenderer;
     [SerializeField] private CharacterDefaultStatsData characterDefaultStatsData; 
-    [SerializeField] private float moveSpeed = 1f;
-    [SerializeField] private float dashSpeed = 4f;
     [SerializeField] private TrailRenderer myTrailRenderer;
     [SerializeField] private Transform weaponCollider;
+    [SerializeField] private Transform _slashSpawnPoint;
     public int _currentLevel { get; set; } = 1;
     public int _currentExp { get; set; } = 0; 
     public float _currentHealth { get; set; }
@@ -41,7 +41,6 @@ public class PlayerController : Singleton<PlayerController>
         knockback = GetComponent<Knockback>();
         dashAction = _ => Dash();
         playerControls.Combat.Dash.performed += dashAction;
-        startingMoveSpeed = moveSpeed;
         InitStats();
     }
 
@@ -49,12 +48,14 @@ public class PlayerController : Singleton<PlayerController>
     {
         _defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
         _currentHealth = _defaultStats.maxHealth;
+        startingMoveSpeed = _defaultStats.moveSpeed;
     }
 
     public void LevelUp()
     {
         _currentLevel++;
         _defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
+        startingMoveSpeed = _defaultStats.moveSpeed;
     }
 
     public float GetTimeOfDieAnim()
@@ -99,6 +100,15 @@ public class PlayerController : Singleton<PlayerController>
         return weaponCollider;
     }
 
+    public Transform GetSlashSpawnPoint()
+    {
+        return _slashSpawnPoint;
+    }
+    public SpriteRenderer GetSpriteRenderer()
+    {
+        return _playerSpriteRenderer;
+    }
+
     private void PlayerInput() {
         movement = playerControls.Movement.Move.ReadValue<Vector2>();
 
@@ -113,7 +123,7 @@ public class PlayerController : Singleton<PlayerController>
     private void Move() {
         if (knockback.GettingKnockedBack) { return; }
 
-        rb.MovePosition(rb.position + movement * (moveSpeed * Time.fixedDeltaTime));
+        rb.MovePosition(rb.position + movement * (startingMoveSpeed * Time.fixedDeltaTime));
     }
 
     private void AdjustPlayerFacingDirection() {
@@ -132,7 +142,7 @@ public class PlayerController : Singleton<PlayerController>
     private void Dash() {
         if (!isDashing) {
             isDashing = true;
-            moveSpeed *= dashSpeed;
+            startingMoveSpeed *= _defaultStats.dashSpeed;
             myTrailRenderer.emitting = true;
             StartCoroutine(EndDashRoutine());
         }
@@ -142,7 +152,7 @@ public class PlayerController : Singleton<PlayerController>
         float dashTime = .2f;
         float dashCD = .25f;
         yield return new WaitForSeconds(dashTime);
-        moveSpeed = startingMoveSpeed;
+        startingMoveSpeed = _defaultStats.moveSpeed;
         myTrailRenderer.emitting = false;
         yield return new WaitForSeconds(dashCD);
         isDashing = false;

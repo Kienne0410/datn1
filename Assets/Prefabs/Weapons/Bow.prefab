@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3339092697656920077}
   - component: {fileID: 4159223228431113734}
   - component: {fileID: 6540354172733690725}
-  - component: {fileID: 796283810351475183}
   m_Layer: 0
   m_Name: Bow
   m_TagString: Untagged
@@ -52,6 +51,7 @@ MonoBehaviour:
   weaponInfo: {fileID: 11400000, guid: 0cdbfee23cc3dfc4ca8cea2b99918a4b, type: 2}
   arrowPrefab: {fileID: 8482323575379879915, guid: 5c028f7d0fe6e8947a74bb84c5dacab6, type: 3}
   arrowSpawnPoint: {fileID: 8335412078041206409}
+  _weaponSpriteRenderer: {fileID: 4159223228431113734}
 --- !u!212 &4159223228431113734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3987391309064833049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9bf7c89e69e73a4499312fc860cc17bb, type: 2}
   m_CullingMode: 0
@@ -129,18 +129,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &796283810351475183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3987391309064833049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65299b86b3660b94f86cc21a94b7aa0a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &4829184815115038606
 GameObject:
   m_ObjectHideFlags: 0

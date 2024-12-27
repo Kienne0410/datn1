@@ -205,6 +205,7 @@ MonoBehaviour:
   dashSpeed: 4
   myTrailRenderer: {fileID: 6360987821800469134}
   weaponCollider: {fileID: 195335369250512692}
+  _slashSpawnPoint: {fileID: 3620141105845178150}
 --- !u!95 &5504664801031650327
 Animator:
   serializedVersion: 7
