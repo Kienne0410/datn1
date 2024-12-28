@@ -115,8 +115,8 @@ public class PlayerController : Singleton<PlayerController>
 
         if (_regenTimer >= 1f) // Nếu đủ 1 giây
         {
-            if (!(_currentHealth < _defaultStats.maxHealth)) return;
             _regenTimer = 0f; // Reset bộ đếm
+            if (!(_currentHealth < _defaultStats.maxHealth)) return;
             _currentHealth = Mathf.Clamp(_currentHealth + _defaultStats.regenSpeed, 0, _defaultStats.maxHealth);
             _hpRegenText.text = $"+{_defaultStats.regenSpeed}HP";
             EventManager.Raise(UIEvent.OnUpdateHealthBar);
