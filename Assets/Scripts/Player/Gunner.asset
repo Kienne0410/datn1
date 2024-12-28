@@ -19,23 +19,23 @@ MonoBehaviour:
     attackSpeed: 0
     moveSpeed: 6
     dashSpeed: 4
-    regenSpeed: 0
+    regenSpeed: 0.5
     damageBonusPercent: 0
     armor: 0
   - maxHealth: 12
-    EXPtoNextLevel: 0
+    EXPtoNextLevel: 200
     attackSpeed: 0
-    moveSpeed: 0
-    dashSpeed: 0
-    regenSpeed: 0
+    moveSpeed: 7
+    dashSpeed: 4
+    regenSpeed: 0.5
     damageBonusPercent: 0
     armor: 0
-  - maxHealth: 0
-    EXPtoNextLevel: 0
+  - maxHealth: 15
+    EXPtoNextLevel: 300
     attackSpeed: 0
-    moveSpeed: 0
-    dashSpeed: 0
-    regenSpeed: 0
+    moveSpeed: 8
+    dashSpeed: 4
+    regenSpeed: 0.5
     damageBonusPercent: 0
     armor: 0
   - maxHealth: 0

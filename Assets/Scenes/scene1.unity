@@ -56135,11 +56135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db6a6ed786ad20f4fb3fa983c92760a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &912799872 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 5266816334317553002, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
-  m_PrefabInstance: {fileID: 8124360135412344597}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &948262798
 GameObject:
   m_ObjectHideFlags: 0
@@ -88296,7 +88291,7 @@ Canvas:
   m_GameObject: {fileID: 2133401179}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -88360,6 +88355,7 @@ MonoBehaviour:
   _healthBarText: {fileID: 989222783}
   _expBarSlider: {fileID: 102776138}
   _expBarText: {fileID: 432955392}
+  _levelText: {fileID: 785737147}
 --- !u!1001 &142967470691648340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89329,6 +89325,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5163714102142209957, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
     - target: {fileID: 5283959581300895502, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: OnTab
       value: 
@@ -89381,10 +89381,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6945959905251510920, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
-      propertyPath: _playerSpriteRenderer
-      value: 
-      objectReference: {fileID: 912799872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

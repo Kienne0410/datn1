@@ -6,7 +6,7 @@ using UnityEngine;
 public class WeaponInfo : ScriptableObject
 {
     public GameObject weaponPrefab;
-    public float weaponCooldown;
+    public float attackSpeed;
     public int weaponDamage;
     public float weaponRange;
 }

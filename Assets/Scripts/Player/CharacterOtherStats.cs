@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [System.Serializable]
-public struct CharacterOtherStats
+public class CharacterOtherStats
 {
     public float lifeSteal;
     public float meleeDamage;

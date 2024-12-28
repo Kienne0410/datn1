@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
@@ -14,6 +15,8 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private TrailRenderer myTrailRenderer;
     [SerializeField] private Transform weaponCollider;
     [SerializeField] private Transform _slashSpawnPoint;
+    [SerializeField] private TextMeshProUGUI _hpRegenText;
+    [SerializeField] private RectTransform _hpRegenTextRectTransform;
     public int _currentLevel { get; set; } = 1;
     public int _currentExp { get; set; } = 0; 
     public float _currentHealth { get; set; }
@@ -50,12 +53,25 @@ public class PlayerController : Singleton<PlayerController>
         _currentHealth = _defaultStats.maxHealth;
         startingMoveSpeed = _defaultStats.moveSpeed;
     }
-
+    
+    public void AddExp(int exp)
+    {
+        _currentExp += exp;
+        EventManager.Raise(UIEvent.OnUpdateExpBar);
+        if (_currentExp >= _defaultStats.EXPtoNextLevel)
+        {
+            _currentExp = 0;
+            LevelUp();
+        }
+    }
     public void LevelUp()
     {
         _currentLevel++;
         _defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
         startingMoveSpeed = _defaultStats.moveSpeed;
+        EventManager.Raise(GameEvent.OnUpdateLevel);
+        EventManager.Raise(UIEvent.OnUpdateExpBar);
+        EventManager.Raise(UIEvent.OnUpdateHealthBar);
     }
 
     public float GetTimeOfDieAnim()
@@ -89,8 +105,54 @@ public class PlayerController : Singleton<PlayerController>
 
     private void Update() {
         PlayerInput();
+        HealthRegen();
     }
 
+    private float _regenTimer = 0f;
+    private void HealthRegen()
+    {
+        _regenTimer += Time.deltaTime;
+
+        if (_regenTimer >= 1f) // Nếu đủ 1 giây
+        {
+            if (!(_currentHealth < _defaultStats.maxHealth)) return;
+            _regenTimer = 0f; // Reset bộ đếm
+            _currentHealth = Mathf.Clamp(_currentHealth + _defaultStats.regenSpeed, 0, _defaultStats.maxHealth);
+            _hpRegenText.text = $"+{_defaultStats.regenSpeed}HP";
+            EventManager.Raise(UIEvent.OnUpdateHealthBar);
+            StartCoroutine(ShowRegenEffect());
+        }
+    }
+    private IEnumerator ShowRegenEffect()
+    {
+        float duration = 0.5f; // Thời gian fade
+        float elapsedTime = 0f;
+        Color originalColor = _hpRegenText.color;
+        
+        Vector3 originalPosition = Camera.main.WorldToScreenPoint(transform.position) + new Vector3(40,40,0);
+
+        // Tăng vị trí dọc trong quá trình fade
+        Vector3 targetPosition = originalPosition + new Vector3(0, 30, 0);
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            
+            // Interpolate vị trí để nhảy lên
+            _hpRegenTextRectTransform.position = Vector3.Lerp(originalPosition, targetPosition, elapsedTime / duration);
+
+            // Giảm alpha để fade dần
+            Color fadedColor = originalColor;
+            fadedColor.a = Mathf.Lerp(1f, 0f, elapsedTime / duration);
+            _hpRegenText.color = fadedColor;
+
+            yield return null;
+        }
+
+        // Reset text sau khi fade
+        _hpRegenText.color = originalColor;
+        _hpRegenText.text = ""; // Ẩn text sau khi hoàn thành
+    }
     private void FixedUpdate() {
         AdjustPlayerFacingDirection();
         Move();

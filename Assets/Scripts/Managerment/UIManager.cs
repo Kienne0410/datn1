@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _healthBarText;
     [SerializeField] private Slider _expBarSlider;
     [SerializeField] private TextMeshProUGUI _expBarText;
+    [SerializeField] private TextMeshProUGUI _levelText;
     private void Awake()
     {
         OnScoreUpdate();
@@ -39,11 +40,17 @@ public class UIManager : MonoBehaviour
         _expBarText.text = $"{currentEXP}/{EXPtoNextLevel}";
         _expBarSlider.value = (float)currentEXP/EXPtoNextLevel;
     }
+
+    private void OnUpdateLevel()
+    {
+        _levelText.text = "Lv" + PlayerController.Instance._currentLevel;
+    }
     private void Start()
     {
         EventManager.Subscribe(GameEvent.OnScoreIncrease, (Action) OnScoreUpdate);
         EventManager.Subscribe(UIEvent.OnUpdateExpBar, (Action) OnUpdateExpBar);
         EventManager.Subscribe(UIEvent.OnUpdateHealthBar, (Action) OnUpdateHealthBar);
+        EventManager.Subscribe(GameEvent.OnUpdateLevel, (Action) OnUpdateLevel);
     }
 
     private void OnScoreUpdate()
@@ -55,5 +62,6 @@ public class UIManager : MonoBehaviour
         EventManager.Unsubscribe(GameEvent.OnScoreIncrease,(Action) OnScoreUpdate);
         EventManager.Unsubscribe(UIEvent.OnUpdateExpBar, (Action) OnUpdateExpBar);
         EventManager.Unsubscribe(UIEvent.OnUpdateHealthBar, (Action) OnUpdateHealthBar);
+        EventManager.Unsubscribe(GameEvent.OnUpdateLevel, (Action) OnUpdateLevel);
     }
 }

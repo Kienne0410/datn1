@@ -1,6 +1,7 @@
 public enum GameEvent
 {
     OnScoreIncrease,
-    GetIsPaused
+    GetIsPaused,
+    OnUpdateLevel
 }
 
