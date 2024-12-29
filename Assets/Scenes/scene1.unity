@@ -53671,7 +53671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &543880551
 Transform:
   m_ObjectHideFlags: 0
@@ -89325,10 +89325,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5163714102142209957, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
-      propertyPath: m_Name
-      value: UI
-      objectReference: {fileID: 0}
     - target: {fileID: 5283959581300895502, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: OnTab
       value: 
@@ -89337,6 +89333,10 @@ PrefabInstance:
       propertyPath: _endGame
       value: 
       objectReference: {fileID: 2113877615}
+    - target: {fileID: 5504664801031650327, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5745302992334545565, guid: 49bdf3379ae6c35468d8cf8355431d74, type: 3}
       propertyPath: cooldownOverlay
       value: 
