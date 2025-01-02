@@ -7,12 +7,14 @@ using UnityEngine.InputSystem;
 public class ActiveWeapon : Singleton<ActiveWeapon>
 {
     public MonoBehaviour CurrentActiveWeapon { get; private set; }
-
     private PlayerControls playerControls;
     private float timeBetweenAttacks;
     private Action<InputAction.CallbackContext> _StartAttacking;
     private Action<InputAction.CallbackContext> _StopAttacking;
     private bool attackButtonDown, isAttacking = false;
+    public bool autoAttack = false;
+    public LayerMask LayerMask;
+    [SerializeField] private MoveFollow _moveFollow;
 
     protected override void Awake() {
         base.Awake();
@@ -21,15 +23,6 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
         _StopAttacking = _ => StopAttacking();
         playerControls.Combat.Attack.started += _StartAttacking;
         playerControls.Combat.Attack.canceled += _StopAttacking;
-    }
-
-    private void OnEnable()
-    {
-        playerControls.Enable();
-    }
-    private void OnDisable()
-    {
-        playerControls?.Disable();
     }
 
     private void OnDestroy()
@@ -80,9 +73,56 @@ public class ActiveWeapon : Singleton<ActiveWeapon>
     }
 
     private void Attack() {
-        if (attackButtonDown && !isAttacking) {
-            AttackCooldown();
-            (CurrentActiveWeapon as IWeapon).Attack();
+        if (autoAttack)
+        {
+            FindNearestEnemy();
         }
+        else
+        {
+            if (attackButtonDown && !isAttacking)
+            {
+                AttackCooldown();
+                (CurrentActiveWeapon as IWeapon).Attack();
+            }
+        }
+    }
+    private void FindNearestEnemy()
+    {
+        Collider2D[] enemiesInRange = Physics2D.OverlapCircleAll(transform.position, 
+            (CurrentActiveWeapon as IWeapon).GetWeaponInfo().weaponRange + PlayerController.Instance.otherStats.attackRange, LayerMask );
+        if (enemiesInRange.Length == 0)
+        {
+            _moveFollow.enabled = true;
+            return;
+        }
+        _moveFollow.enabled = false;
+        float shortestDistance = Mathf.Infinity;
+        Transform nearestEnemy = null;
+        foreach (Collider2D enemy in enemiesInRange)
+        {
+            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < shortestDistance)
+            {
+                shortestDistance = distanceToEnemy;
+                nearestEnemy = enemy.transform;
+            }
+        }
+        Vector2 direction = nearestEnemy.position - transform.position;
+        // Tính toán góc giữa súng và mục tiêu
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        RotateGunTowardsTarget();
+        float angleDifference = Mathf.Abs(Mathf.DeltaAngle(transform.eulerAngles.z, angle));
+        if (angleDifference < 5f && !isAttacking)
+        {
+            (CurrentActiveWeapon as IWeapon).Attack();
+            AttackCooldown();
+        }
+        void RotateGunTowardsTarget()
+        {
+            // Tạo hiệu ứng xoay mượt
+            Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * 30f);
+        }
+        
     }
 }

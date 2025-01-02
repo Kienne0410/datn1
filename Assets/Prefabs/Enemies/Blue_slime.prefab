@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7435406801340899128}
   - component: {fileID: 1112634253997321736}
   - component: {fileID: 3009798612563817373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Blue_slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 628785883938138462}
   - component: {fileID: 4645606188535766432}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

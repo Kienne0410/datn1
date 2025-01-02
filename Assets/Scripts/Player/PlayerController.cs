@@ -9,7 +9,6 @@ using UnityEngine.Serialization;
 public class PlayerController : Singleton<PlayerController>
 {
     public bool FacingLeft { get { return facingLeft; } }
-    
     [SerializeField] private SpriteRenderer _playerSpriteRenderer;
     [SerializeField] private CharacterDefaultStatsData characterDefaultStatsData; 
     [SerializeField] private TrailRenderer myTrailRenderer;
@@ -20,8 +19,8 @@ public class PlayerController : Singleton<PlayerController>
     public int _currentLevel { get; set; } = 1;
     public int _currentExp { get; set; } = 0; 
     public float _currentHealth { get; set; }
-    public CharacterDefaultStats _defaultStats { get; set; }
-    public CharacterOtherStats _otherStats { get; set; } = new CharacterOtherStats();
+    public CharacterDefaultStats defaultStats { get; set; }
+    public CharacterOtherStats otherStats { get; set; } = new CharacterOtherStats();
     private PlayerControls playerControls;
     private Vector2 movement;
     private Rigidbody2D rb;
@@ -49,16 +48,16 @@ public class PlayerController : Singleton<PlayerController>
 
     public void InitStats()
     {
-        _defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
-        _currentHealth = _defaultStats.maxHealth;
-        startingMoveSpeed = _defaultStats.moveSpeed;
+        defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
+        _currentHealth = defaultStats.maxHealth;
+        startingMoveSpeed = defaultStats.moveSpeed;
     }
     
     public void AddExp(int exp)
     {
         _currentExp += exp;
         EventManager.Raise(UIEvent.OnUpdateExpBar);
-        if (_currentExp >= _defaultStats.EXPtoNextLevel)
+        if (_currentExp >= defaultStats.EXPtoNextLevel)
         {
             _currentExp = 0;
             LevelUp();
@@ -67,8 +66,8 @@ public class PlayerController : Singleton<PlayerController>
     public void LevelUp()
     {
         _currentLevel++;
-        _defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
-        startingMoveSpeed = _defaultStats.moveSpeed;
+        defaultStats = characterDefaultStatsData.characterStats[_currentLevel-1];
+        startingMoveSpeed = defaultStats.moveSpeed;
         EventManager.Raise(GameEvent.OnUpdateLevel);
         EventManager.Raise(UIEvent.OnUpdateExpBar);
         EventManager.Raise(UIEvent.OnUpdateHealthBar);
@@ -100,6 +99,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private void OnDestroy()
     {
+        playerControls?.Disable();
         playerControls.Combat.Dash.performed -= dashAction;
     }
 
@@ -116,9 +116,9 @@ public class PlayerController : Singleton<PlayerController>
         if (_regenTimer >= 1f) // Nếu đủ 1 giây
         {
             _regenTimer = 0f; // Reset bộ đếm
-            if (!(_currentHealth < _defaultStats.maxHealth)) return;
-            _currentHealth = Mathf.Clamp(_currentHealth + _defaultStats.regenSpeed, 0, _defaultStats.maxHealth);
-            _hpRegenText.text = $"+{_defaultStats.regenSpeed}HP";
+            if (!(_currentHealth < defaultStats.maxHealth)) return;
+            _currentHealth = Mathf.Clamp(_currentHealth + defaultStats.regenSpeed, 0, defaultStats.maxHealth);
+            _hpRegenText.text = $"+{defaultStats.regenSpeed}HP";
             EventManager.Raise(UIEvent.OnUpdateHealthBar);
             StartCoroutine(ShowRegenEffect());
         }
@@ -204,7 +204,7 @@ public class PlayerController : Singleton<PlayerController>
     private void Dash() {
         if (!isDashing) {
             isDashing = true;
-            startingMoveSpeed *= _defaultStats.dashSpeed;
+            startingMoveSpeed *= defaultStats.dashSpeed;
             myTrailRenderer.emitting = true;
             StartCoroutine(EndDashRoutine());
         }
@@ -214,7 +214,7 @@ public class PlayerController : Singleton<PlayerController>
         float dashTime = .2f;
         float dashCD = .25f;
         yield return new WaitForSeconds(dashTime);
-        startingMoveSpeed = _defaultStats.moveSpeed;
+        startingMoveSpeed = defaultStats.moveSpeed;
         myTrailRenderer.emitting = false;
         yield return new WaitForSeconds(dashCD);
         isDashing = false;

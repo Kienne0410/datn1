@@ -23,7 +23,7 @@ MonoBehaviour:
     damageBonusPercent: 0
     armor: 0
   - maxHealth: 12
-    EXPtoNextLevel: 200
+    EXPtoNextLevel: 100000
     attackSpeed: 0
     moveSpeed: 7
     dashSpeed: 4

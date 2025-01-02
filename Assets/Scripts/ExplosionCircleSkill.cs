@@ -36,16 +36,6 @@ public class ExplosionSkill : MonoBehaviour
         activeSkillAction = _ => OnActivateSkill();
         _playerControls.Combat.ActivateSkill.performed += activeSkillAction;
     }
-
-    private void OnEnable()
-    {
-        _playerControls.Enable();
-    }
-
-    private void OnDisable()
-    {
-        _playerControls.Disable();
-    }
     private void Start()
     {
         // Lấy AudioSource từ đối tượng

@@ -14,21 +14,28 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Slider _expBarSlider;
     [SerializeField] private TextMeshProUGUI _expBarText;
     [SerializeField] private TextMeshProUGUI _levelText;
+    [SerializeField] private Toggle _autoAttackToggle;
     private void Awake()
     {
         OnScoreUpdate();
         OnUpdateExpBar();
         OnUpdateHealthBar();
+        _autoAttackToggle.isOn = ActiveWeapon.Instance.autoAttack;
+        _autoAttackToggle.onValueChanged.AddListener(AutoAttackToggle);
     }
 
+    private void AutoAttackToggle(bool isOn)
+    {
+        ActiveWeapon.Instance.autoAttack = isOn;
+    }
     private void OnUpdateHealthBar()
     {
-        SetHealthBar(PlayerController.Instance._currentHealth,PlayerController.Instance._defaultStats.maxHealth);
+        SetHealthBar(PlayerController.Instance._currentHealth,PlayerController.Instance.defaultStats.maxHealth);
     }
 
     private void OnUpdateExpBar()
     {
-        SetEXPBar(PlayerController.Instance._currentExp,PlayerController.Instance._defaultStats.EXPtoNextLevel);
+        SetEXPBar(PlayerController.Instance._currentExp,PlayerController.Instance.defaultStats.EXPtoNextLevel);
     }
     private void SetHealthBar(float currentHealth, float maxHealth)
     {
@@ -63,5 +70,6 @@ public class UIManager : MonoBehaviour
         EventManager.Unsubscribe(UIEvent.OnUpdateExpBar, (Action) OnUpdateExpBar);
         EventManager.Unsubscribe(UIEvent.OnUpdateHealthBar, (Action) OnUpdateHealthBar);
         EventManager.Unsubscribe(GameEvent.OnUpdateLevel, (Action) OnUpdateLevel);
+        _autoAttackToggle.onValueChanged.RemoveListener(AutoAttackToggle);
     }
 }
