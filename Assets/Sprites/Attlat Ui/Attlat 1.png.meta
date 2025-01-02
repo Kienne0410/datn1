@@ -283,7 +283,7 @@ TextureImporter:
         x: 128
         y: 915
         width: 227
-        height: 26
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,8 +368,8 @@ TextureImporter:
       name: Attlat 1_15
       rect:
         serializedVersion: 2
-        x: 874
-        y: 831
+        x: 875
+        y: 836
         width: 151
         height: 34
       alignment: 0
@@ -703,7 +703,7 @@ TextureImporter:
         width: 169
         height: 222
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

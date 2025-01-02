@@ -51471,6 +51471,7 @@ MonoBehaviour:
   _dontDestroyOnload: 0
   backgroundMusicSource: {fileID: 94093231}
   soundEffectSource: {fileID: 94093232}
+  defaultBackgroundMusic: {fileID: 0}
   musicVolume: 0.538
   sfxVolume: 0.807
 --- !u!82 &94093231
