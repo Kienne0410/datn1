@@ -1,0 +1,31 @@
+# Thư mục Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Uu]serSettings/
+
+# Thư mục build
+[Bb]uild/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Bb]in/
+
+# Các file tạm
+*.swp
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.vscode/
+
+# Các file log
+*.log
+
+# Các file khác không cần thiết
+*.bak
+*.tmp
+
+# Các file của Rider tạo ra
+*.csproj
+*.sln
